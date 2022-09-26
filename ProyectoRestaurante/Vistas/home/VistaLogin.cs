@@ -19,14 +19,14 @@ namespace ProyectoRestaurante
         }
         
         // se instacia la conexión a la base de datos
-        OracleConnection oraConn = new OracleConnection("DATA SOURCE = xe; PASSWORD = ByronCarrasco07; USER ID = ADMIN;");
+        OracleConnection oraConn = new OracleConnection("DATA SOURCE = xe; PASSWORD = restaurant; USER ID = restaurant;");
         
        
         private void btnIngresar_Click_1(object sender, EventArgs e)
         {
             oraConn.Open();
             //selecciono la tabla de busqueda con los datos necesarios
-            OracleCommand comando = new OracleCommand("SELECT NOMBRE_USUARIO, FROM USUARIOS WHERE NOMBRE_USUARIO =:nombre AND PASSWORD =:password", oraConn);
+            OracleCommand comando = new OracleCommand("SELECT NOMBRE_USUARIO FROM USUARIOS WHERE NOMBRE_USUARIO =:nombre AND PASSWORD =:password", oraConn);
 
             // solicito los datos de entrada
             comando.Parameters.AddWithValue(":nombre", textBoxUser.Text);
