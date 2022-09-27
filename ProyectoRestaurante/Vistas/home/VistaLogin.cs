@@ -26,7 +26,7 @@ namespace ProyectoRestaurante
         {
             oraConn.Open();
             //selecciono la tabla de busqueda con los datos necesarios
-            OracleCommand comando = new OracleCommand("SELECT NOMBRE_USUARIO FROM USUARIOS WHERE NOMBRE_USUARIO =:nombre AND PASSWORD =:password", oraConn);
+            OracleCommand comando = new OracleCommand("SELECT NOMBRE_USUARIO, TIPO_USUARIO FROM USUARIOS WHERE NOMBRE_USUARIO =:nombre AND PASSWORD =:password", oraConn);
 
             // solicito los datos de entrada
             comando.Parameters.AddWithValue(":nombre", textBoxUser.Text);
