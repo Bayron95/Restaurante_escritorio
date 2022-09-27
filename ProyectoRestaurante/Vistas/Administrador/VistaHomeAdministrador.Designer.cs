@@ -209,6 +209,7 @@ namespace ProyectoRestaurante
             this.btnProveedores.TabIndex = 3;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = true;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // btnProductos
             // 
@@ -218,6 +219,7 @@ namespace ProyectoRestaurante
             this.btnProductos.TabIndex = 2;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // btnUsuarios
             // 
@@ -227,6 +229,7 @@ namespace ProyectoRestaurante
             this.btnUsuarios.TabIndex = 1;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnMesas
             // 

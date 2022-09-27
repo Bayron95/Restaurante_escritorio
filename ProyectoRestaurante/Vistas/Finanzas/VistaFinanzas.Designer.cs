@@ -140,6 +140,7 @@ namespace ProyectoRestaurante
             this.btn_cerrarSesion.TabIndex = 3;
             this.btn_cerrarSesion.Text = "Cerrar Sesión";
             this.btn_cerrarSesion.UseVisualStyleBackColor = true;
+            this.btn_cerrarSesion.Click += new System.EventHandler(this.btn_cerrarSesion_Click);
             // 
             // label3
             // 

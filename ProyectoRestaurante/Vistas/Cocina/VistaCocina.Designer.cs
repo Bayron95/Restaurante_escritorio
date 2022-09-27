@@ -34,7 +34,7 @@ namespace ProyectoRestaurante
             this.lblNameUser = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -75,7 +75,7 @@ namespace ProyectoRestaurante
             this.panel2.Controls.Add(this.lblNameUser);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnCerrarSesion);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(1, 86);
             this.panel2.Name = "panel2";
@@ -109,14 +109,15 @@ namespace ProyectoRestaurante
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // button1
+            // btnCerrarSesion
             // 
-            this.button1.Location = new System.Drawing.Point(874, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Cerrar Sesión";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(874, 17);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(124, 23);
+            this.btnCerrarSesion.TabIndex = 3;
+            this.btnCerrarSesion.Text = "Cerrar Sesión";
+            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // panel1
             // 
@@ -272,7 +273,7 @@ namespace ProyectoRestaurante
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCerrarSesion;
         private System.Windows.Forms.Label lblNameUser;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.DataGridView dataGridView1;

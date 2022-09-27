@@ -18,5 +18,11 @@ namespace ProyectoRestaurante
             lblNameUser.Text = usuario;
         }
 
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            VistaLogin sesion = new VistaLogin();
+            sesion.Show();
+            this.Close();
+        }
     }
 }

@@ -12,6 +12,13 @@ namespace ProyectoRestaurante
 {
     public partial class VistaHomeAdministrador : Form
     {
+
+        public VistaHomeAdministrador()
+        {
+            InitializeComponent();
+            
+        }
+
         public VistaHomeAdministrador(string usuario)
         {
             InitializeComponent();
@@ -35,6 +42,27 @@ namespace ProyectoRestaurante
         {
             VistaGestionMesas mesas = new VistaGestionMesas();
             mesas.Show();
+            this.Hide();
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            //VistaGestionUsuarios usuarios = new VistaGestionUsuarios();
+            //usuarios.Show();
+            this.Hide();
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            VistaGestiónProductos productos = new VistaGestiónProductos();
+            productos.Show();
+            this.Hide();
+        }
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            VistaGestionProveedor proveedores = new VistaGestionProveedor();
+            proveedores.Show();
             this.Hide();
         }
     }

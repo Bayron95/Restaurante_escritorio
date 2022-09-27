@@ -34,12 +34,12 @@ namespace ProyectoRestaurante
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.lblNameUser = new System.Windows.Forms.Label();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lblNameUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -92,7 +92,7 @@ namespace ProyectoRestaurante
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel2.Controls.Add(this.lblNameUser);
-            this.panel2.Controls.Add(this.btnCerrarSesion);
+            this.panel2.Controls.Add(this.btnVolver);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.label3);
@@ -101,14 +101,24 @@ namespace ProyectoRestaurante
             this.panel2.Size = new System.Drawing.Size(1034, 75);
             this.panel2.TabIndex = 3;
             // 
-            // btnCerrarSesion
+            // lblNameUser
             // 
-            this.btnCerrarSesion.Location = new System.Drawing.Point(876, 17);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(116, 23);
-            this.btnCerrarSesion.TabIndex = 5;
-            this.btnCerrarSesion.Text = "Cerrar Sesión";
-            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.lblNameUser.AutoSize = true;
+            this.lblNameUser.Location = new System.Drawing.Point(158, 18);
+            this.lblNameUser.Name = "lblNameUser";
+            this.lblNameUser.Size = new System.Drawing.Size(58, 17);
+            this.lblNameUser.TabIndex = 6;
+            this.lblNameUser.Text = "Nombre";
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.Location = new System.Drawing.Point(876, 17);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(116, 23);
+            this.btnVolver.TabIndex = 5;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // label4
             // 
@@ -145,15 +155,6 @@ namespace ProyectoRestaurante
             this.panel3.Size = new System.Drawing.Size(1034, 399);
             this.panel3.TabIndex = 4;
             // 
-            // lblNameUser
-            // 
-            this.lblNameUser.AutoSize = true;
-            this.lblNameUser.Location = new System.Drawing.Point(158, 18);
-            this.lblNameUser.Name = "lblNameUser";
-            this.lblNameUser.Size = new System.Drawing.Size(58, 17);
-            this.lblNameUser.TabIndex = 6;
-            this.lblNameUser.Text = "Nombre";
-            // 
             // VistaGestionMesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -182,7 +183,7 @@ namespace ProyectoRestaurante
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;

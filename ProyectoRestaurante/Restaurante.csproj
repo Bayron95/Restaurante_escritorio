@@ -92,11 +92,11 @@
     <Compile Include="Vistas\Administrador\VistaGestionProveedor.Designer.cs">
       <DependentUpon>VistaGestionProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Administrador\VistaGestiónProductos.cs">
+    <Compile Include="Vistas\Administrador\VistaGestionProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Administrador\VistaGestiónProductos.Designer.cs">
-      <DependentUpon>VistaGestiónProductos.cs</DependentUpon>
+    <Compile Include="Vistas\Administrador\VistaGestionProductos.Designer.cs">
+      <DependentUpon>VistaGestionProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Bodega\VistaBodega.cs">
       <SubType>Form</SubType>

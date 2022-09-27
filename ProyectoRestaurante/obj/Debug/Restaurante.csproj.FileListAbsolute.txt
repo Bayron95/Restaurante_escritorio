@@ -89,11 +89,7 @@ C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\Proyect
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.ValueTuple.xml
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
-C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.Administrador.VistaGestionMesas.resources
-C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.VistaFinanzas.resources
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaLogin.resources
-C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Properties.Resources.resources
-C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.VistaBodega.resources
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaCocina.resources
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaHomeAdministrador.resources
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
@@ -135,3 +131,6 @@ C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaura
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaFinanzas.resources
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaBodega.resources
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionMesas.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionMesas.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaFinanzas.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaBodega.resources
