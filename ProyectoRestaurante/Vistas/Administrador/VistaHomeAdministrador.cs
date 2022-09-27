@@ -12,17 +12,15 @@ namespace ProyectoRestaurante
 {
     public partial class VistaHomeAdministrador : Form
     {
-
-        public VistaHomeAdministrador()
-        {
-            InitializeComponent();
-            
-        }
-
         public VistaHomeAdministrador(string usuario)
         {
             InitializeComponent();
             lblNameUser.Text = usuario;
+        }
+        public VistaHomeAdministrador()
+        {
+            InitializeComponent();
+
         }
 
         private void cerrarProgramaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,8 +45,8 @@ namespace ProyectoRestaurante
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            //VistaGestionUsuarios usuarios = new VistaGestionUsuarios();
-            //usuarios.Show();
+            VistaGestionUsuarios usuarios = new VistaGestionUsuarios();
+            usuarios.Show();
             this.Hide();
         }
 
@@ -63,6 +61,13 @@ namespace ProyectoRestaurante
         {
             VistaGestionProveedor proveedores = new VistaGestionProveedor();
             proveedores.Show();
+            this.Hide();
+        }
+
+        private void btnResumenDatos_Click(object sender, EventArgs e)
+        {
+            VistaGestionReportes reportes = new VistaGestionReportes();
+            reportes.Show();
             this.Hide();
         }
     }

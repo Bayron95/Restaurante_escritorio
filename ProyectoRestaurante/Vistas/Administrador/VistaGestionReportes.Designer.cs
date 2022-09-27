@@ -1,7 +1,7 @@
 ﻿
 namespace ProyectoRestaurante
 {
-    partial class VistaGestionProveedor
+    partial class VistaGestionReportes
     {
         /// <summary>
         /// Required designer variable.
@@ -33,18 +33,18 @@ namespace ProyectoRestaurante
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblNameUser = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,7 +58,7 @@ namespace ProyectoRestaurante
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1034, 87);
-            this.panel1.TabIndex = 5;
+            this.panel1.TabIndex = 8;
             // 
             // pictureBox2
             // 
@@ -88,14 +88,6 @@ namespace ProyectoRestaurante
             this.label1.TabIndex = 0;
             this.label1.Text = "Restaurant Siglo XXI";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(13, 7);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(56, 53);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -107,7 +99,7 @@ namespace ProyectoRestaurante
             this.panel2.Location = new System.Drawing.Point(0, 88);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1034, 75);
-            this.panel2.TabIndex = 6;
+            this.panel2.TabIndex = 9;
             // 
             // lblNameUser
             // 
@@ -137,15 +129,23 @@ namespace ProyectoRestaurante
             this.label4.TabIndex = 4;
             this.label4.Text = "Usuario:";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(13, 7);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(56, 53);
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(426, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 24);
+            this.label3.Size = new System.Drawing.Size(185, 24);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Proveedores";
+            this.label3.Text = "Resumen de datos";
             // 
             // panel3
             // 
@@ -153,25 +153,25 @@ namespace ProyectoRestaurante
             this.panel3.Location = new System.Drawing.Point(0, 164);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1034, 395);
-            this.panel3.TabIndex = 7;
+            this.panel3.TabIndex = 10;
             // 
-            // VistaGestionProveedor
+            // VistaGestionReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1034, 558);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Name = "VistaGestionProveedor";
-            this.Text = "VistaGestionProveedor";
+            this.Controls.Add(this.panel3);
+            this.Name = "VistaGestionReportes";
+            this.Text = "VistaGestionReportes";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -182,11 +182,11 @@ namespace ProyectoRestaurante
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblNameUser;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
     }

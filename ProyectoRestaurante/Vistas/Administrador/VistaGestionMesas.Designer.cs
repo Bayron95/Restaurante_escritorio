@@ -66,14 +66,14 @@ namespace ProyectoRestaurante
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1034, 91);
+            this.panel1.Size = new System.Drawing.Size(1034, 87);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(876, 17);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(100, 56);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
@@ -133,7 +133,7 @@ namespace ProyectoRestaurante
             // 
             this.pictureBox3.Location = new System.Drawing.Point(13, 7);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(66, 61);
+            this.pictureBox3.Size = new System.Drawing.Size(56, 53);
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             // 
@@ -143,9 +143,9 @@ namespace ProyectoRestaurante
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(426, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 24);
+            this.label3.Size = new System.Drawing.Size(70, 24);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Administrador";
+            this.label3.Text = "Mesas";
             // 
             // panel3
             // 

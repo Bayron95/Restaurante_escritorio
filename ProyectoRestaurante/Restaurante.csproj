@@ -98,6 +98,18 @@
     <Compile Include="Vistas\Administrador\VistaGestionProductos.Designer.cs">
       <DependentUpon>VistaGestionProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Administrador\VistaGestionReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Administrador\VistaGestionReportes.Designer.cs">
+      <DependentUpon>VistaGestionReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\VistaGestionUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Administrador\VistaGestionUsuarios.Designer.cs">
+      <DependentUpon>VistaGestionUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Bodega\VistaBodega.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +144,18 @@
     </Compile>
     <EmbeddedResource Include="Vistas\Administrador\VistaGestionMesas.resx">
       <DependentUpon>VistaGestionMesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Administrador\VistaGestionProductos.resx">
+      <DependentUpon>VistaGestionProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Administrador\VistaGestionProveedor.resx">
+      <DependentUpon>VistaGestionProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Administrador\VistaGestionReportes.resx">
+      <DependentUpon>VistaGestionReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Administrador\VistaGestionUsuarios.resx">
+      <DependentUpon>VistaGestionUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Finanzas\VistaFinanzas.resx">
       <DependentUpon>VistaFinanzas.cs</DependentUpon>

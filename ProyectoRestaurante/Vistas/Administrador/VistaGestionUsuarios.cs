@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoRestaurante
 {
-    public partial class VistaGestionProveedor : Form
+    public partial class VistaGestionUsuarios : Form
     {
-        public VistaGestionProveedor()
+        public VistaGestionUsuarios()
         {
             InitializeComponent();
         }

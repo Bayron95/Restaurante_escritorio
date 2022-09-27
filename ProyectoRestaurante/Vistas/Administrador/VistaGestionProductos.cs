@@ -16,5 +16,12 @@ namespace ProyectoRestaurante
         {
             InitializeComponent();
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            VistaHomeAdministrador homeAdm = new VistaHomeAdministrador();
+            homeAdm.Show();
+            this.Close();
+        }
     }
 }

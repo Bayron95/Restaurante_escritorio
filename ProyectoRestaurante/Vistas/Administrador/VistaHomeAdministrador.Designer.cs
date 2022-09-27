@@ -72,7 +72,7 @@ namespace ProyectoRestaurante
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(1, 86);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1032, 72);
+            this.panel2.Size = new System.Drawing.Size(1032, 74);
             this.panel2.TabIndex = 2;
             // 
             // lblNameUser
@@ -123,7 +123,7 @@ namespace ProyectoRestaurante
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Location = new System.Drawing.Point(2, 154);
+            this.splitContainer1.Location = new System.Drawing.Point(2, 161);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -141,7 +141,7 @@ namespace ProyectoRestaurante
             this.splitContainer1.Panel2.Controls.Add(this.btnProductos);
             this.splitContainer1.Panel2.Controls.Add(this.btnUsuarios);
             this.splitContainer1.Panel2.Controls.Add(this.btnMesas);
-            this.splitContainer1.Size = new System.Drawing.Size(1032, 403);
+            this.splitContainer1.Size = new System.Drawing.Size(1032, 397);
             this.splitContainer1.SplitterDistance = 342;
             this.splitContainer1.TabIndex = 3;
             // 
@@ -200,6 +200,7 @@ namespace ProyectoRestaurante
             this.btnResumenDatos.TabIndex = 4;
             this.btnResumenDatos.Text = "Resumen de datos";
             this.btnResumenDatos.UseVisualStyleBackColor = true;
+            this.btnResumenDatos.Click += new System.EventHandler(this.btnResumenDatos_Click);
             // 
             // btnProveedores
             // 
