@@ -12,9 +12,10 @@ namespace ProyectoRestaurante
 {
     public partial class VistaCocina : Form
     {
-        public VistaCocina()
+        public VistaCocina(string usuario)
         {
             InitializeComponent();
+            lblNameUser.Text = usuario;
         }
 
     }

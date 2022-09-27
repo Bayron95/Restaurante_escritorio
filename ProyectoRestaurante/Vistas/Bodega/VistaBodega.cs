@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoRestaurante.Vistas
+namespace ProyectoRestaurante
 {
     public partial class VistaBodega : Form
     {
-        public VistaBodega()
+        public VistaBodega(string usuario)
         {
             InitializeComponent();
+            lblNameUser.Text = usuario;
         }
 
         private void btn_cerrarSesion_Click(object sender, EventArgs e)

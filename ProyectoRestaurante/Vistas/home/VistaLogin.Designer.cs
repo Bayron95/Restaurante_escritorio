@@ -113,7 +113,6 @@ namespace ProyectoRestaurante
             // 
             // textBoxUser
             // 
-            this.textBoxUser.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBoxUser.Location = new System.Drawing.Point(338, 251);
             this.textBoxUser.Name = "textBoxUser";
             this.textBoxUser.Size = new System.Drawing.Size(100, 22);

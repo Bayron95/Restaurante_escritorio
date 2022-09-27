@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoRestaurante.Vistas
+namespace ProyectoRestaurante
 {
     public partial class VistaFinanzas : Form
     {
-        public VistaFinanzas()
+        public VistaFinanzas(string usuario)
         {
             InitializeComponent();
+            lblNameUser.Text = usuario;
         }
 
     }

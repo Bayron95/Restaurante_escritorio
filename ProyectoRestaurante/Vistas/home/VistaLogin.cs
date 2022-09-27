@@ -18,37 +18,79 @@ namespace ProyectoRestaurante
             InitializeComponent();
         }
         
-        // se instacia la conexión a la base de datos
+        // Instaciar la conexión a la base de datos ORACLE
         OracleConnection oraConn = new OracleConnection("DATA SOURCE = xe; PASSWORD = restaurant; USER ID = restaurant;");
         
        
         private void btnIngresar_Click_1(object sender, EventArgs e)
         {
-            oraConn.Open();
-            //selecciono la tabla de busqueda con los datos necesarios
-            OracleCommand comando = new OracleCommand("SELECT NOMBRE_USUARIO, TIPO_USUARIO FROM USUARIOS WHERE NOMBRE_USUARIO =:nombre AND PASSWORD =:password", oraConn);
+            login(this.textBoxUser.Text,this.textBoxPassword.Text);
+        }
 
-            // solicito los datos de entrada
-            comando.Parameters.AddWithValue(":nombre", textBoxUser.Text);
-            comando.Parameters.AddWithValue(":password", textBoxPassword.Text);
 
-            // nuevo lector de datos entrantes
-            OracleDataReader lector = comando.ExecuteReader();
-
-            //condicional si existe el usuario dentro de la tabala de usuarios
-            if (lector.Read())
+        public void login(string usuario, string password)
+        {
+            try
             {
-                //ingresa a la vista segun perfil o rol de usuario
-                Form formularioADM = new VistaHomeAdministrador();
-                MessageBox.Show("Ingreso Exitoso");
-                formularioADM.Show();
-                this.Hide();
+                //abro conexión
+                oraConn.Open();
+                //Consulta en variable
+                OracleCommand comando = new OracleCommand("SELECT NOMBRE_USUARIO, TIPO_USUARIO " +
+                                                          "FROM USUARIOS " +
+                                                          "WHERE NOMBRE_USUARIO =:nombre " +
+                                                          "AND PASSWORD =:password", oraConn);
+
+                // solicito los datos de entrada
+                comando.Parameters.AddWithValue(":nombre", textBoxUser.Text);
+                comando.Parameters.AddWithValue(":password", textBoxPassword.Text);
+
+                OracleDataAdapter sda = new OracleDataAdapter(comando);
+
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+
+                if (dt.Rows.Count == 1)
+                {
+                    this.Hide();
+                    if (dt.Rows[0][1].ToString() == "Administrador")
+                    {
+                        MessageBox.Show("Ingreso Exitoso");
+                        new VistaHomeAdministrador(dt.Rows[0][0].ToString()).Show();
+                        this.Hide();
+                    }
+                    else if (dt.Rows[0][1].ToString() == "Cocina")
+                    {
+                        new VistaCocina(dt.Rows[0][0].ToString()).Show();
+                    }
+                    else if (dt.Rows[0][1].ToString() == "Finanzas")
+                    {
+                        new VistaFinanzas(dt.Rows[0][0].ToString()).Show();
+                    }
+                    else if (dt.Rows[0][1].ToString() == "Bodega")
+                    {
+                        new VistaBodega(dt.Rows[0][0].ToString()).Show();
+                    }
+                    //else if (dt.Rows[0][1].ToString() == "Garzon")
+                    //{
+                    //    new VistaCocina(dt.Rows[0][0].ToString()).Show();
+                    //}
+                }
+                else
+                {
+                    MessageBox.Show("Usuario y/o contraseña incorrecta");
+                }
+
             }
-            else
+            catch (Exception e)
             {
-                MessageBox.Show("Usuario o clave no existe");
+
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
                 oraConn.Close();
             }
         }
+
     }
 }

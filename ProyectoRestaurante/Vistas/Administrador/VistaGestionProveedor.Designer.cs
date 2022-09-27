@@ -1,5 +1,5 @@
 ﻿
-namespace ProyectoRestaurante.Vistas.Administrador
+namespace ProyectoRestaurante
 {
     partial class VistaGestionProveedor
     {

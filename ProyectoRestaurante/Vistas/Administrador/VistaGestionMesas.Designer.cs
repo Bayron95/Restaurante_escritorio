@@ -1,5 +1,5 @@
 ﻿
-namespace ProyectoRestaurante.Vistas.Administrador
+namespace ProyectoRestaurante
 {
     partial class VistaGestionMesas
     {
@@ -38,6 +38,8 @@ namespace ProyectoRestaurante.Vistas.Administrador
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblNameUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -79,21 +81,22 @@ namespace ProyectoRestaurante.Vistas.Administrador
             // 
             this.label1.AutoSize = true;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Stencil", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(251, 17);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(288, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(488, 49);
+            this.label1.Size = new System.Drawing.Size(412, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "Restaurant Siglo XXI";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Controls.Add(this.lblNameUser);
             this.panel2.Controls.Add(this.btnCerrarSesion);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(0, 90);
+            this.panel2.Location = new System.Drawing.Point(1, 86);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1034, 75);
             this.panel2.TabIndex = 3;
@@ -134,11 +137,29 @@ namespace ProyectoRestaurante.Vistas.Administrador
             this.label3.TabIndex = 2;
             this.label3.Text = "Administrador";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.Location = new System.Drawing.Point(0, 160);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1034, 399);
+            this.panel3.TabIndex = 4;
+            // 
+            // lblNameUser
+            // 
+            this.lblNameUser.AutoSize = true;
+            this.lblNameUser.Location = new System.Drawing.Point(158, 18);
+            this.lblNameUser.Name = "lblNameUser";
+            this.lblNameUser.Size = new System.Drawing.Size(58, 17);
+            this.lblNameUser.TabIndex = 6;
+            this.lblNameUser.Text = "Nombre";
+            // 
             // VistaGestionMesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1034, 558);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "VistaGestionMesas";
@@ -165,5 +186,7 @@ namespace ProyectoRestaurante.Vistas.Administrador
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblNameUser;
+        private System.Windows.Forms.Panel panel3;
     }
 }

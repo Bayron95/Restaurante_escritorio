@@ -1,2 +1,2 @@
-# ProyectoRestaurante_desktop
- Portafolio - Aplicación de escritorio
+# ProyectoDotNet
+Portafolio - Aplicacción Escritorio
