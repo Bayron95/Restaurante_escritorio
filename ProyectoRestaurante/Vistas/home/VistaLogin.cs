@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.OracleClient;
+//using System.Data.OracleClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oracle.ManagedDataAccess.Client;
 
 namespace ProyectoRestaurante
 {
@@ -19,7 +20,7 @@ namespace ProyectoRestaurante
         }
         
         // Instaciar la conexión a la base de datos ORACLE
-        OracleConnection oraConn = new OracleConnection("DATA SOURCE = xe; PASSWORD = restaurant; USER ID = restaurant;");
+        OracleConnection oraConn = new OracleConnection("DATA SOURCE = restaurantsigloxxi_high; PASSWORD = ByronCarrasco07; USER ID = ADMIN;");
         
        
         private void btnIngresar_Click_1(object sender, EventArgs e)
@@ -41,8 +42,8 @@ namespace ProyectoRestaurante
                                                           "AND PASSWORD =:password", oraConn);
 
                 // solicito los datos de entrada
-                comando.Parameters.AddWithValue(":nombre", textBoxUser.Text);
-                comando.Parameters.AddWithValue(":password", textBoxPassword.Text);
+                comando.Parameters.Add(":nombre", textBoxUser.Text);
+                comando.Parameters.Add(":password", textBoxPassword.Text);
 
                 OracleDataAdapter sda = new OracleDataAdapter(comando);
 
