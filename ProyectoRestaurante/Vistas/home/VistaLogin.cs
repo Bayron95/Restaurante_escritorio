@@ -20,7 +20,7 @@ namespace ProyectoRestaurante
         }
         
         // Instaciar la conexión a la base de datos ORACLE
-        OracleConnection oraConn = new OracleConnection("DATA SOURCE = restaurantsigloxxi_high; PASSWORD = ByronCarrasco07; USER ID = ADMIN;");
+        OracleConnection oraConn = new OracleConnection("DATA SOURCE = r3nyifjq4ic3fa96_high; PASSWORD = ByronCarrasco07; USER ID = ADMIN;");
         
        
         private void btnIngresar_Click_1(object sender, EventArgs e)
