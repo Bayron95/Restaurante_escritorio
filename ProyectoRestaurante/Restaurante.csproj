@@ -80,6 +80,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ConexionBD.cs" />
+    <Compile Include="DAO\MesasDao.cs" />
+    <Compile Include="DAO\PedidoDao.cs" />
+    <Compile Include="DAO\UsuariosDao.cs" />
+    <Compile Include="DTO\MesasDto.cs" />
+    <Compile Include="DTO\PedidoDto.cs" />
+    <Compile Include="DTO\ProductosDto.cs" />
+    <Compile Include="DTO\ProveedoresDto.cs" />
+    <Compile Include="DTO\UsuariosDto.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Administrador\VistaGestionMesas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +156,28 @@
     <Compile Include="Vistas\Administrador\VistaHomeAdministrador.Designer.cs">
       <DependentUpon>VistaHomeAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\viewCrud\AgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\viewCrud\AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\viewCrud\EditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\viewCrud\EditarUsuario.Designer.cs">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\viewCrud\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\viewCrud\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Administrador\VistaGestionMesas.resx">
       <DependentUpon>VistaGestionMesas.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +208,15 @@
     <EmbeddedResource Include="Vistas\Administrador\VistaHomeAdministrador.resx">
       <DependentUpon>VistaHomeAdministrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\viewCrud\AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\viewCrud\EditarUsuario.resx">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\viewCrud\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -198,7 +243,6 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\img\LogoResto.png" />
-    <None Include="Resources\LogoResto.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />

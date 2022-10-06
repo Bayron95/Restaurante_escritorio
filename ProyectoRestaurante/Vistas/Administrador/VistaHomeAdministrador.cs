@@ -7,13 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProyectoRestaurante.DAO;
+using Oracle.ManagedDataAccess.Client;
 
 namespace ProyectoRestaurante
 {
     public partial class VistaHomeAdministrador : Form
     {
+
+        ConexionBD con = new ConexionBD();
         public VistaHomeAdministrador(string usuario)
         {
+            
             InitializeComponent();
             lblNameUser.Text = usuario;
         }
@@ -69,6 +74,17 @@ namespace ProyectoRestaurante
             VistaGestionReportes reportes = new VistaGestionReportes();
             reportes.Show();
             this.Hide();
+        }
+
+        private void VistaHomeAdministrador_Load(object sender, EventArgs e)
+        {
+            //AllPedidos();
+        }
+
+        private void AllPedidos()
+        {
+            PedidoDao usr = new PedidoDao();
+            dgvPedidos.DataSource = usr.VerPedidos();
         }
     }
 }

@@ -25,5 +25,15 @@ namespace ProyectoRestaurante
             homeAdm.Show();
             this.Close();
         }
+
+        private void VistaGestionMesas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

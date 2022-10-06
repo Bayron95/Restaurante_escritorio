@@ -40,11 +40,15 @@ namespace ProyectoRestaurante
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -150,10 +154,46 @@ namespace ProyectoRestaurante
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.button1);
             this.panel3.Location = new System.Drawing.Point(0, 164);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1034, 395);
             this.panel3.TabIndex = 10;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(210, 127);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(147, 140);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Reporte de Ventas";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(444, 127);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(147, 140);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Informe Mensual";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(684, 127);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(147, 140);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Informe Semanal";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // VistaGestionReportes
             // 
@@ -164,6 +204,7 @@ namespace ProyectoRestaurante
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Name = "VistaGestionReportes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VistaGestionReportes";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -172,6 +213,7 @@ namespace ProyectoRestaurante
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -189,5 +231,8 @@ namespace ProyectoRestaurante
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

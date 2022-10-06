@@ -37,10 +37,7 @@ namespace ProyectoRestaurante
             this.label3 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Nro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Mesa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GestionPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPedidos = new System.Windows.Forms.DataGridView();
             this.btnResumenDatos = new System.Windows.Forms.Button();
             this.btnProveedores = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
@@ -56,7 +53,7 @@ namespace ProyectoRestaurante
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -130,7 +127,7 @@ namespace ProyectoRestaurante
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.splitContainer1.Panel1.Controls.Add(this.label2);
-            this.splitContainer1.Panel1.Controls.Add(this.dataGridView1);
+            this.splitContainer1.Panel1.Controls.Add(this.dgvPedidos);
             this.splitContainer1.Panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
             // 
             // splitContainer1.Panel2
@@ -155,42 +152,15 @@ namespace ProyectoRestaurante
             this.label2.TabIndex = 1;
             this.label2.Text = "Pedidos entrantes";
             // 
-            // dataGridView1
+            // dgvPedidos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nro,
-            this.Mesa,
-            this.GestionPedido});
-            this.dataGridView1.Location = new System.Drawing.Point(7, 41);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(330, 313);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Nro
-            // 
-            this.Nro.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nro.FillWeight = 106.9519F;
-            this.Nro.HeaderText = "Nro";
-            this.Nro.MinimumWidth = 6;
-            this.Nro.Name = "Nro";
-            // 
-            // Mesa
-            // 
-            this.Mesa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Mesa.FillWeight = 93.04813F;
-            this.Mesa.HeaderText = "Mesa";
-            this.Mesa.MinimumWidth = 6;
-            this.Mesa.Name = "Mesa";
-            // 
-            // GestionPedido
-            // 
-            this.GestionPedido.HeaderText = "Acción";
-            this.GestionPedido.MinimumWidth = 6;
-            this.GestionPedido.Name = "GestionPedido";
-            this.GestionPedido.Width = 125;
+            this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPedidos.Location = new System.Drawing.Point(7, 41);
+            this.dgvPedidos.Name = "dgvPedidos";
+            this.dgvPedidos.RowHeadersWidth = 51;
+            this.dgvPedidos.RowTemplate.Height = 24;
+            this.dgvPedidos.Size = new System.Drawing.Size(330, 313);
+            this.dgvPedidos.TabIndex = 0;
             // 
             // btnResumenDatos
             // 
@@ -292,7 +262,9 @@ namespace ProyectoRestaurante
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "VistaHomeAdministrador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VistaHomeAdministrador";
+            this.Load += new System.EventHandler(this.VistaHomeAdministrador_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -301,7 +273,7 @@ namespace ProyectoRestaurante
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -315,9 +287,7 @@ namespace ProyectoRestaurante
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Mesa;
+        private System.Windows.Forms.DataGridView dgvPedidos;
         private System.Windows.Forms.Button btnResumenDatos;
         private System.Windows.Forms.Button btnProveedores;
         private System.Windows.Forms.Button btnProductos;
@@ -326,7 +296,6 @@ namespace ProyectoRestaurante
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnCerrarSesion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GestionPedido;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;

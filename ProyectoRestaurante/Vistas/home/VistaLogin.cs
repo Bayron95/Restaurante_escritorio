@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
 
+
 namespace ProyectoRestaurante
 {
     public partial class VistaLogin : Form
@@ -20,12 +21,14 @@ namespace ProyectoRestaurante
         }
         
         // Instaciar la conexión a la base de datos ORACLE
-        OracleConnection oraConn = new OracleConnection("DATA SOURCE = r3nyifjq4ic3fa96_high; PASSWORD = ByronCarrasco07; USER ID = ADMIN;");
-        
-       
-        private void btnIngresar_Click_1(object sender, EventArgs e)
+        //OracleConnection oraConn = new OracleConnection("DATA SOURCE = r3nyifjq4ic3fa96_high; PASSWORD = RestauranteSiglo21; USER ID = ADMIN;");
+
+        OracleConnection oraConn = new OracleConnection("DATA SOURCE = localhost; PASSWORD = restaurant; USER ID = restaurant;");
+
+
+        private void btnIngresar_Click(object sender, EventArgs e)
         {
-            login(this.textBoxUser.Text,this.textBoxPassword.Text);
+            login(this.textBoxUser.Text, this.textBoxPassword.Text);
         }
 
 
@@ -36,26 +39,26 @@ namespace ProyectoRestaurante
                 //abro conexión
                 oraConn.Open();
                 //Consulta en variable
-                OracleCommand comando = new OracleCommand("SELECT NOMBRE_USUARIO, TIPO_USUARIO " +
+                OracleCommand comando = new OracleCommand("SELECT USUARIO, TIPO_USUARIO " +
                                                           "FROM USUARIOS " +
-                                                          "WHERE NOMBRE_USUARIO =:nombre " +
+                                                          "WHERE USUARIO =:nombre " +
                                                           "AND PASSWORD =:password", oraConn);
 
                 // solicito los datos de entrada
                 comando.Parameters.Add(":nombre", textBoxUser.Text);
                 comando.Parameters.Add(":password", textBoxPassword.Text);
 
-                OracleDataAdapter sda = new OracleDataAdapter(comando);
+                OracleDataAdapter oda = new OracleDataAdapter(comando);
 
                 DataTable dt = new DataTable();
-                sda.Fill(dt);
+                oda.Fill(dt);
 
                 if (dt.Rows.Count == 1)
                 {
                     this.Hide();
                     if (dt.Rows[0][1].ToString() == "Administrador")
                     {
-                        MessageBox.Show("Ingreso Exitoso");
+                        MessageBox.Show("Bienvenido! "+textBoxUser.Text);
                         new VistaHomeAdministrador(dt.Rows[0][0].ToString()).Show();
                         this.Hide();
                     }
