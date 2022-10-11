@@ -34,9 +34,9 @@ namespace ProyectoRestaurante.Vistas.viewCrud
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cboBoxTipoUser = new System.Windows.Forms.ComboBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cboTipoUser = new System.Windows.Forms.ComboBox();
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -59,6 +59,7 @@ namespace ProyectoRestaurante.Vistas.viewCrud
             // 
             this.txtPassword.Location = new System.Drawing.Point(82, 179);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(121, 22);
             this.txtPassword.TabIndex = 3;
             // 
@@ -80,47 +81,48 @@ namespace ProyectoRestaurante.Vistas.viewCrud
             this.label3.TabIndex = 4;
             this.label3.Text = "Tipo Usuario:";
             // 
-            // cboBoxTipoUser
+            // cboTipoUser
             // 
-            this.cboBoxTipoUser.FormattingEnabled = true;
-            this.cboBoxTipoUser.Items.AddRange(new object[] {
+            this.cboTipoUser.FormattingEnabled = true;
+            this.cboTipoUser.Items.AddRange(new object[] {
             "Administrador",
             "Bodega",
             "Finanzas",
             "Cocina",
             "Otro..."});
-            this.cboBoxTipoUser.Location = new System.Drawing.Point(82, 261);
-            this.cboBoxTipoUser.Name = "cboBoxTipoUser";
-            this.cboBoxTipoUser.Size = new System.Drawing.Size(121, 24);
-            this.cboBoxTipoUser.TabIndex = 5;
+            this.cboTipoUser.Location = new System.Drawing.Point(82, 261);
+            this.cboTipoUser.Name = "cboTipoUser";
+            this.cboTipoUser.Size = new System.Drawing.Size(121, 24);
+            this.cboTipoUser.TabIndex = 5;
             // 
-            // btnAdd
+            // btnAceptar
             // 
-            this.btnAdd.Location = new System.Drawing.Point(34, 334);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(88, 36);
-            this.btnAdd.TabIndex = 6;
-            this.btnAdd.Text = "Aceptar";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAceptar.Location = new System.Drawing.Point(34, 334);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(88, 36);
+            this.btnAceptar.TabIndex = 6;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btnCerrar
             // 
-            this.button2.Location = new System.Drawing.Point(157, 334);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 36);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCerrar.Location = new System.Drawing.Point(157, 334);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(88, 36);
+            this.btnCerrar.TabIndex = 7;
+            this.btnCerrar.Text = "Cancelar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // AgregarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(281, 411);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.cboBoxTipoUser);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnAceptar);
+            this.Controls.Add(this.cboTipoUser);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label2);
@@ -141,8 +143,8 @@ namespace ProyectoRestaurante.Vistas.viewCrud
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cboBoxTipoUser;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox cboTipoUser;
+        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }

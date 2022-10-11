@@ -29,9 +29,9 @@ namespace ProyectoRestaurante.Vistas.viewCrud
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.cboBoxTipoUser = new System.Windows.Forms.ComboBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.cboTipoUser = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,37 +39,38 @@ namespace ProyectoRestaurante.Vistas.viewCrud
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.Location = new System.Drawing.Point(158, 321);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 36);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancelar.Location = new System.Drawing.Point(158, 321);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(88, 36);
+            this.btnCancelar.TabIndex = 15;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnAdd
+            // btnGuardar
             // 
-            this.btnAdd.Location = new System.Drawing.Point(35, 321);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(88, 36);
-            this.btnAdd.TabIndex = 14;
-            this.btnAdd.Text = "Guardar";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnGuardar.Location = new System.Drawing.Point(35, 321);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(88, 36);
+            this.btnGuardar.TabIndex = 14;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
             // 
-            // cboBoxTipoUser
+            // cboTipoUser
             // 
-            this.cboBoxTipoUser.FormattingEnabled = true;
-            this.cboBoxTipoUser.Items.AddRange(new object[] {
+            this.cboTipoUser.FormattingEnabled = true;
+            this.cboTipoUser.Items.AddRange(new object[] {
             "Administrador",
             "Bodega",
             "Finanzas",
             "Cocina",
             "Otro..."});
-            this.cboBoxTipoUser.Location = new System.Drawing.Point(83, 248);
-            this.cboBoxTipoUser.Name = "cboBoxTipoUser";
-            this.cboBoxTipoUser.Size = new System.Drawing.Size(121, 24);
-            this.cboBoxTipoUser.TabIndex = 13;
+            this.cboTipoUser.Location = new System.Drawing.Point(83, 248);
+            this.cboTipoUser.Name = "cboTipoUser";
+            this.cboTipoUser.Size = new System.Drawing.Size(121, 24);
+            this.cboTipoUser.TabIndex = 13;
             // 
             // label3
             // 
@@ -117,9 +118,9 @@ namespace ProyectoRestaurante.Vistas.viewCrud
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(281, 411);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.cboBoxTipoUser);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.cboTipoUser);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label2);
@@ -135,9 +136,9 @@ namespace ProyectoRestaurante.Vistas.viewCrud
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.ComboBox cboBoxTipoUser;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.ComboBox cboTipoUser;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label2;

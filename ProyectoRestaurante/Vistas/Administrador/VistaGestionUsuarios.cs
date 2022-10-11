@@ -7,9 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.ManagedDataAccess.Client;
 using ProyectoRestaurante.DAO;
-using ProyectoRestaurante.DTO;
 using ProyectoRestaurante.Vistas.viewCrud;
 
 namespace ProyectoRestaurante
@@ -19,10 +17,7 @@ namespace ProyectoRestaurante
 
         public VistaGestionUsuarios()
         {
-           
-
             InitializeComponent();
-            
             //lblNameUser.Text
         }
        
@@ -33,12 +28,18 @@ namespace ProyectoRestaurante
             this.Close();
         }
 
-        private void VistaGestionUsuarios_Load(object sender, EventArgs e)
+        private void ActualizarGrid(object sender, AgregarUsuario.UpdateEventArgs args)
         {
-            VerUsuarios();
+            UsuariosDao usr = new UsuariosDao();
+            dataGridView1.DataSource = usr.VerUsuarios();
         }
 
-        private void VerUsuarios()
+        private void VistaGestionUsuarios_Load(object sender, EventArgs e)
+        {
+            MostrarUsuarios();
+        }
+
+        private void MostrarUsuarios()
         {
             UsuariosDao usr = new UsuariosDao();
             dataGridView1.DataSource = usr.VerUsuarios();
@@ -48,8 +49,20 @@ namespace ProyectoRestaurante
         {
             AgregarUsuario Addusr = new AgregarUsuario();
             Addusr.Show();
+            Addusr.UpdateEventHandler += ActualizarGrid;
+            //Addusr.ShowDialog();
         }
 
-  
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            EditarUsuario EditUsr = new EditarUsuario();
+            EditUsr.Show();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            EliminarUsuario DelUsr = new EliminarUsuario();
+            DelUsr.Show();
+        }
     }
 }

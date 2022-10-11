@@ -13,25 +13,43 @@ namespace ProyectoRestaurante.Vistas.viewCrud
 {
     public partial class AgregarUsuario : Form
     {
+        UsuariosDao usr = new UsuariosDao();
+
         public AgregarUsuario()
         {
             InitializeComponent();
         }
 
+        public delegate void UpdateDelegate(object sender, UpdateEventArgs args);
+        public event UpdateDelegate UpdateEventHandler;
+
+        public class UpdateEventArgs : EventArgs
+        {
+            public string Data { get; set; }
+        }
+
+        protected void insertar()
+        {
+            UpdateEventArgs args = new UpdateEventArgs();
+            UpdateEventHandler.Invoke(this,args);
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            
+            AgregarNuevo();
+            this.Close();
+            insertar();
         }
 
 
         public void AgregarNuevo()
         {
-            UsuariosDao usr = new UsuariosDao();
+            
             if (txtUsuario.Text != "")
             {
                 if (txtPassword.Text != "")
                 {
-                    usr.InsertUser(txtUsuario.Text, txtPassword.Text, cboBoxTipoUser.Text);
+                    usr.CreateUsuario(txtUsuario.Text, txtPassword.Text, cboTipoUser.Text);
+                                        
                 }
                 else
                 {
@@ -42,7 +60,14 @@ namespace ProyectoRestaurante.Vistas.viewCrud
             {
                 MessageBox.Show("Ingrese un nombre de usuario");
             }
-            
+
+            MessageBox.Show("Usuario creado con exito!");
+
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

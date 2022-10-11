@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
 
 
+
 namespace ProyectoRestaurante
 {
     public partial class VistaLogin : Form
@@ -19,11 +20,14 @@ namespace ProyectoRestaurante
         {
             InitializeComponent();
         }
-        
-        // Instaciar la conexión a la base de datos ORACLE
-        //OracleConnection oraConn = new OracleConnection("DATA SOURCE = r3nyifjq4ic3fa96_high; PASSWORD = RestauranteSiglo21; USER ID = ADMIN;");
 
-        OracleConnection oraConn = new OracleConnection("DATA SOURCE = localhost; PASSWORD = restaurant; USER ID = restaurant;");
+        // Instaciar la conexión a la base de datos ORACLE CLOUD
+        OracleConnection oraConn = new OracleConnection("DATA SOURCE = restaurantedb_high; PASSWORD = RestauranteSiglo21; USER ID = ADMIN;");
+
+        // Instaciar la conexión a la base de datos ORACLE LOCAL
+        //OracleConnection oraConn = new OracleConnection("DATA SOURCE = localhost; " +
+        //"PASSWORD = restaurant; " +
+        //"USER ID = restaurant;");
 
 
         private void btnIngresar_Click(object sender, EventArgs e)

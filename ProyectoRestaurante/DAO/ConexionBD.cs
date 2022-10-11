@@ -10,10 +10,10 @@ namespace ProyectoRestaurante.DAO
     {
 
         // Instaciar la conexión a la base de datos ORACLE
-        //protected OracleConnection oraConn = new OracleConnection("DATA SOURCE = r3nyifjq4ic3fa96_high; PASSWORD = RestauranteSiglo21; USER ID = ADMIN;");
+        protected OracleConnection oraConn = new OracleConnection("DATA SOURCE = restaurantedb_high; PASSWORD = RestauranteSiglo21; USER ID = ADMIN;");
 
         //Local
-        protected OracleConnection oraConn = new OracleConnection("DATA SOURCE = localhost; PASSWORD = restaurant; USER ID = restaurant;");
+        //protected OracleConnection oraConn = new OracleConnection("DATA SOURCE = localhost; PASSWORD = restaurant; USER ID = restaurant;");
 
 
     }

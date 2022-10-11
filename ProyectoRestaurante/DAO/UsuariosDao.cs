@@ -13,6 +13,7 @@ namespace ProyectoRestaurante.DAO
     {
 
         OracleDataReader LeerFilas;
+        //DataTable tb = new DataTable();
         OracleCommand cmd = new OracleCommand();
 
         //metodos crud
@@ -46,44 +47,48 @@ namespace ProyectoRestaurante.DAO
 
         }
 
-        public void InsertUser(string usuario, string password, string tipoUsurio) 
+        public void CreateUsuario(string usuario, string password, string tipoUsurio) 
         {
 
             cmd.Connection = oraConn;
             oraConn.Open();
+
             cmd.CommandText = "SP_CREATE_USUARIO";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("v_usuario",usuario);
-            cmd.Parameters.Add("V_password", password);
-            cmd.Parameters.Add("V_tipo_usuario", tipoUsurio);
-
+            cmd.Parameters.Add("V_password",password);
+            cmd.Parameters.Add("V_tipo_usuario",tipoUsurio);
+            cmd.ExecuteNonQuery();
+            
             oraConn.Close();
-
         }
 
-        public void update(int v_id, string usuario, string password, string tipoUsurio) 
+        public void UpdateUsuario(int v_id, string usuario, string password, string tipoUsurio) 
         {
 
             cmd.Connection = oraConn;
             oraConn.Open();
+
             cmd.CommandText = "SP_UPDATE_USUARIO";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("v_id", v_id);
             cmd.Parameters.Add("v_usuario", usuario);
             cmd.Parameters.Add("V_password", password);
             cmd.Parameters.Add("V_tipo_usuario", tipoUsurio);
+            cmd.ExecuteNonQuery();
 
             oraConn.Close();
         }
-        public void delete(int id_user) 
+        public void DeleteUsuario(int id_user) 
         {
 
 
             cmd.Connection = oraConn;
             oraConn.Open();
+
             cmd.CommandText = "SP_DELETE_USUARIO";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("v_id", id_user);
+            cmd.ExecuteNonQuery();
 
             oraConn.Close();
         }
