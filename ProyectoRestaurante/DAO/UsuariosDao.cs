@@ -13,7 +13,6 @@ namespace ProyectoRestaurante.DAO
     {
 
         OracleDataReader LeerFilas;
-        //DataTable tb = new DataTable();
         OracleCommand cmd = new OracleCommand();
 
         //metodos crud
@@ -63,7 +62,7 @@ namespace ProyectoRestaurante.DAO
             oraConn.Close();
         }
 
-        public void UpdateUsuario(int v_id, string usuario, string password, string tipoUsurio) 
+        public void UpdateUsuario(int id, string usuario, string password, string tipoUsurio) 
         {
 
             cmd.Connection = oraConn;
@@ -71,9 +70,11 @@ namespace ProyectoRestaurante.DAO
 
             cmd.CommandText = "SP_UPDATE_USUARIO";
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("v_id", id);
             cmd.Parameters.Add("v_usuario", usuario);
             cmd.Parameters.Add("V_password", password);
             cmd.Parameters.Add("V_tipo_usuario", tipoUsurio);
+            
             cmd.ExecuteNonQuery();
 
             oraConn.Close();

@@ -202,7 +202,7 @@ namespace ProyectoRestaurante
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(438, 223);
+            this.dataGridView1.Size = new System.Drawing.Size(553, 223);
             this.dataGridView1.TabIndex = 0;
             // 
             // VistaGestionUsuarios
@@ -245,7 +245,7 @@ namespace ProyectoRestaurante
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btn_AddUser;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnEditar;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

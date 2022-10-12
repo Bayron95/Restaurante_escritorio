@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using ProyectoRestaurante.DAO;
 using System.Windows.Forms;
+using ProyectoRestaurante.C_Negocio;
 
 namespace ProyectoRestaurante.Vistas.viewCrud
 {
     public partial class AgregarUsuario : Form
     {
-        UsuariosDao usr = new UsuariosDao();
+        CN_Usuarios cn_usr = new CN_Usuarios();
+        //UsuariosDao usr = new UsuariosDao();
 
         public AgregarUsuario()
         {
@@ -48,7 +50,7 @@ namespace ProyectoRestaurante.Vistas.viewCrud
             {
                 if (txtPassword.Text != "")
                 {
-                    usr.CreateUsuario(txtUsuario.Text, txtPassword.Text, cboTipoUser.Text);
+                    cn_usr.AgregarUsuario(txtUsuario.Text, txtPassword.Text, cboTipoUser.Text);
                                         
                 }
                 else

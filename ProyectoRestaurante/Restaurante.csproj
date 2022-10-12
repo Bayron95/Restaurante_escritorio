@@ -80,6 +80,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="C_Negocio\CN_Usuarios.cs" />
     <Compile Include="DAO\ConexionBD.cs" />
     <Compile Include="DAO\MesasDao.cs" />
     <Compile Include="DAO\PedidoDao.cs" />

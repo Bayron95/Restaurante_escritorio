@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-//using System.Data.OracleClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,7 +21,9 @@ namespace ProyectoRestaurante
         }
 
         // Instaciar la conexión a la base de datos ORACLE CLOUD
-        OracleConnection oraConn = new OracleConnection("DATA SOURCE = restaurantedb_high; PASSWORD = RestauranteSiglo21; USER ID = ADMIN;");
+        OracleConnection oraConn = new OracleConnection("DATA SOURCE = restaurantedb_high; " +
+                                                        "PASSWORD = RestauranteSiglo21; " +
+                                                        "USER ID = ADMIN;");
 
         // Instaciar la conexión a la base de datos ORACLE LOCAL
         //OracleConnection oraConn = new OracleConnection("DATA SOURCE = localhost; " +
@@ -62,7 +63,7 @@ namespace ProyectoRestaurante
                     this.Hide();
                     if (dt.Rows[0][1].ToString() == "Administrador")
                     {
-                        MessageBox.Show("Bienvenido! "+textBoxUser.Text);
+                        MessageBox.Show("Bienvenido! \n"+textBoxUser.Text);
                         new VistaHomeAdministrador(dt.Rows[0][0].ToString()).Show();
                         this.Hide();
                     }

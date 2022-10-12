@@ -29,18 +29,12 @@ namespace ProyectoRestaurante.Vistas.viewCrud
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(81, 103);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(121, 22);
-            this.txtUsuario.TabIndex = 9;
             // 
             // btnCancelar
             // 
@@ -55,11 +49,11 @@ namespace ProyectoRestaurante.Vistas.viewCrud
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(78, 73);
+            this.label2.Location = new System.Drawing.Point(38, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 17);
+            this.label2.Size = new System.Drawing.Size(93, 17);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Id Usuario";
+            this.label2.Text = "Eliminando a:";
             // 
             // btnAceptar
             // 
@@ -71,15 +65,35 @@ namespace ProyectoRestaurante.Vistas.viewCrud
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(137, 95);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(72, 17);
+            this.lblNombre.TabIndex = 16;
+            this.lblNombre.Text = "lblNombre";
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(137, 130);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(56, 17);
+            this.lblId.TabIndex = 17;
+            this.lblId.Text = "LabelID";
+            this.lblId.Visible = false;
+            // 
             // EliminarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(281, 255);
+            this.Controls.Add(this.lblId);
+            this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtUsuario);
             this.Name = "EliminarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarUsuario";
@@ -89,10 +103,10 @@ namespace ProyectoRestaurante.Vistas.viewCrud
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAceptar;
+        public System.Windows.Forms.Label lblNombre;
+        public System.Windows.Forms.Label lblId;
     }
 }

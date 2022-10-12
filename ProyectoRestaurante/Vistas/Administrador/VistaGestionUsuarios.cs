@@ -17,6 +17,7 @@ namespace ProyectoRestaurante
 
         public VistaGestionUsuarios()
         {
+
             InitializeComponent();
             //lblNameUser.Text
         }
@@ -28,7 +29,19 @@ namespace ProyectoRestaurante
             this.Close();
         }
 
-        private void ActualizarGrid(object sender, AgregarUsuario.UpdateEventArgs args)
+        private void ActualizarGridAdd(object sender, AgregarUsuario.UpdateEventArgs args)
+        {
+            UsuariosDao usr = new UsuariosDao();
+            dataGridView1.DataSource = usr.VerUsuarios();
+        }
+
+        private void ActualizarGridUpdate(object sender, EditarUsuario.UpdateEventArgs args)
+        {
+            UsuariosDao usr = new UsuariosDao();
+            dataGridView1.DataSource = usr.VerUsuarios();
+        }
+
+        private void ActualizarGridDelete(object sender, EliminarUsuario.UpdateEventArgs args)
         {
             UsuariosDao usr = new UsuariosDao();
             dataGridView1.DataSource = usr.VerUsuarios();
@@ -49,20 +62,50 @@ namespace ProyectoRestaurante
         {
             AgregarUsuario Addusr = new AgregarUsuario();
             Addusr.Show();
-            Addusr.UpdateEventHandler += ActualizarGrid;
-            //Addusr.ShowDialog();
+            Addusr.UpdateEventHandler += ActualizarGridAdd;
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
             EditarUsuario EditUsr = new EditarUsuario();
-            EditUsr.Show();
+            
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                EditUsr.lblId.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                EditUsr.txtUsuario.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                EditUsr.txtPassword.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                EditUsr.cboTipoUser.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                EditUsr.Show();
+                EditUsr.UpdateEventHandler += ActualizarGridUpdate;
+               
+
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila para editar un usuario");
+            }
+
+            
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             EliminarUsuario DelUsr = new EliminarUsuario();
-            DelUsr.Show();
+
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+
+                DelUsr.lblId.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                DelUsr.lblNombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                DelUsr.Show();
+                DelUsr.UpdateEventHandler += ActualizarGridDelete;
+
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila para editar un usuario");
+            }
+            
         }
     }
 }
