@@ -25,8 +25,9 @@ namespace ProyectoRestaurante
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+
             cn_usr.LoginUsuario(this.textBoxUser.Text, this.textBoxPassword.Text);
-            this.Hide();
+            
         }
 
     }

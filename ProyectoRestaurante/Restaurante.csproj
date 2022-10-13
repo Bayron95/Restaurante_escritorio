@@ -87,11 +87,13 @@
     <Compile Include="C_Negocio\CN_Mesas.cs" />
     <Compile Include="C_Negocio\CN_Pedidos.cs" />
     <Compile Include="C_Negocio\CN_Platos.cs" />
+    <Compile Include="C_Negocio\CN_Proveedores.cs" />
     <Compile Include="C_Negocio\CN_Usuarios.cs" />
     <Compile Include="DAO\ConexionBD.cs" />
     <Compile Include="DAO\MesasDao.cs" />
     <Compile Include="DAO\PedidosDao.cs" />
     <Compile Include="DAO\PlatosDao.cs" />
+    <Compile Include="DAO\ProveedoresDao.cs" />
     <Compile Include="DAO\UsuariosDao.cs" />
     <Compile Include="DTO\MesasDto.cs" />
     <Compile Include="DTO\PedidoDto.cs" />
@@ -172,17 +174,35 @@
     <Compile Include="Vistas\viewCrud\AgregarPlato.Designer.cs">
       <DependentUpon>AgregarPlato.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\viewCrud\AgregarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\viewCrud\AgregarProveedor.Designer.cs">
+      <DependentUpon>AgregarProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\viewCrud\AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\viewCrud\AgregarUsuario.Designer.cs">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\viewCrud\EditarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\viewCrud\EditarProveedor.Designer.cs">
+      <DependentUpon>EditarProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\viewCrud\EditarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\viewCrud\EditarUsuario.Designer.cs">
       <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\viewCrud\EliminarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\viewCrud\EliminarProveedor.Designer.cs">
+      <DependentUpon>EliminarProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\viewCrud\EliminarUsuario.cs">
       <SubType>Form</SubType>
@@ -227,11 +247,20 @@
     <EmbeddedResource Include="Vistas\viewCrud\AgregarPlato.resx">
       <DependentUpon>AgregarPlato.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\viewCrud\AgregarProveedor.resx">
+      <DependentUpon>AgregarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\viewCrud\AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\viewCrud\EditarProveedor.resx">
+      <DependentUpon>EditarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\viewCrud\EditarUsuario.resx">
       <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\viewCrud\EliminarProveedor.resx">
+      <DependentUpon>EliminarProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\viewCrud\EliminarUsuario.resx">
       <DependentUpon>EliminarUsuario.cs</DependentUpon>

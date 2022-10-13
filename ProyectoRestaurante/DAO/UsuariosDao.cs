@@ -125,7 +125,7 @@ namespace ProyectoRestaurante.DAO
                     {
                         MessageBox.Show("Bienvenido! \n" + vlogin.textBoxUser.Text);
                         new VistaHomeAdministrador(dt.Rows[0][0].ToString()).Show();
-                        vlogin.Hide();
+                        
                     }
                     else if (dt.Rows[0][1].ToString() == "Cocina")
                     {
@@ -139,10 +139,7 @@ namespace ProyectoRestaurante.DAO
                     {
                         new VistaBodega(dt.Rows[0][0].ToString()).Show();
                     }
-                    //else if (dt.Rows[0][1].ToString() == "Garzon")
-                    //{
-                    //    new VistaCocina(dt.Rows[0][0].ToString()).Show();
-                    //}
+                    vlogin.Hide();
                 }
                 else
                 {
