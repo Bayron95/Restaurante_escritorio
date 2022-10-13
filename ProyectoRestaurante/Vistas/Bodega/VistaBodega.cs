@@ -17,12 +17,23 @@ namespace ProyectoRestaurante
             InitializeComponent();
             lblNameUser.Text = usuario;
         }
+        public VistaBodega()
+        {
+            InitializeComponent();
+        }
 
         private void btn_cerrarSesion_Click(object sender, EventArgs e)
         {
             VistaLogin sesion = new VistaLogin();
             sesion.Show();
             this.Close();
+        }
+
+        private void Btn_ProductosClick(object sender, EventArgs e)
+        {
+            VistaGestiónProductos3 productos = new VistaGestiónProductos3();
+            productos.Show();
+            this.Hide();
         }
     }
 }

@@ -80,10 +80,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="C_Negocio\CN_Productos.cs" />
     <Compile Include="C_Negocio\CN_Usuarios.cs" />
     <Compile Include="DAO\ConexionBD.cs" />
     <Compile Include="DAO\MesasDao.cs" />
     <Compile Include="DAO\PedidoDao.cs" />
+    <Compile Include="DAO\ProductosDao.cs" />
     <Compile Include="DAO\UsuariosDao.cs" />
     <Compile Include="DTO\MesasDto.cs" />
     <Compile Include="DTO\PedidoDto.cs" />
@@ -94,6 +96,24 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="viewCrudBodega\AgregarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewCrudBodega\AgregarProductos.Designer.cs">
+      <DependentUpon>AgregarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewCrudBodega\EditarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewCrudBodega\EditarProductos.Designer.cs">
+      <DependentUpon>EditarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewCrudBodega\EliminarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewCrudBodega\EliminarProductos.Designer.cs">
+      <DependentUpon>EliminarProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Administrador\VistaGestionMesas.cs">
       <SubType>Form</SubType>
@@ -130,6 +150,12 @@
     </Compile>
     <Compile Include="Vistas\Bodega\VistaBodega.Designer.cs">
       <DependentUpon>VistaBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Bodega\VistaGestionProductos3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Bodega\VistaGestionProductos3.Designer.cs">
+      <DependentUpon>VistaGestionProductos3.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Cocina\VistaCocina.cs">
       <SubType>Form</SubType>
@@ -179,6 +205,15 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="viewCrudBodega\AgregarProductos.resx">
+      <DependentUpon>AgregarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewCrudBodega\EditarProductos.resx">
+      <DependentUpon>EditarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewCrudBodega\EliminarProductos.resx">
+      <DependentUpon>EliminarProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Administrador\VistaGestionMesas.resx">
       <DependentUpon>VistaGestionMesas.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Administrador\VistaGestionUsuarios.resx">
       <DependentUpon>VistaGestionUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Bodega\VistaGestionProductos3.resx">
+      <DependentUpon>VistaGestionProductos3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Finanzas\VistaFinanzas.resx">
       <DependentUpon>VistaFinanzas.cs</DependentUpon>

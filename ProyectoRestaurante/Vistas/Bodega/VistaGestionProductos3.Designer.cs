@@ -1,7 +1,7 @@
 ﻿
 namespace ProyectoRestaurante
 {
-    partial class VistaGestiónProductos
+    partial class VistaGestiónProductos3
     {
         /// <summary>
         /// Required designer variable.
@@ -40,17 +40,21 @@ namespace ProyectoRestaurante
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblStockProd = new System.Windows.Forms.Label();
+            this.lblPrecioProd = new System.Windows.Forms.Label();
+            this.lblNombreProd = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -133,9 +137,9 @@ namespace ProyectoRestaurante
             this.lblNameUser.AutoSize = true;
             this.lblNameUser.Location = new System.Drawing.Point(158, 18);
             this.lblNameUser.Name = "lblNameUser";
-            this.lblNameUser.Size = new System.Drawing.Size(58, 17);
+            this.lblNameUser.Size = new System.Drawing.Size(46, 17);
             this.lblNameUser.TabIndex = 6;
-            this.lblNameUser.Text = "Nombre";
+            this.lblNameUser.Text = "Felipe";
             // 
             // btnVolver
             // 
@@ -179,15 +183,89 @@ namespace ProyectoRestaurante
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.flowLayoutPanel1);
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Location = new System.Drawing.Point(0, 164);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1034, 395);
             this.panel3.TabIndex = 5;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel4.Controls.Add(this.lblStockProd);
+            this.panel4.Controls.Add(this.lblPrecioProd);
+            this.panel4.Controls.Add(this.lblNombreProd);
+            this.panel4.Location = new System.Drawing.Point(453, 5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(273, 280);
+            this.panel4.TabIndex = 10;
+            // 
+            // lblStockProd
+            // 
+            this.lblStockProd.AutoSize = true;
+            this.lblStockProd.Location = new System.Drawing.Point(3, 44);
+            this.lblStockProd.Name = "lblStockProd";
+            this.lblStockProd.Size = new System.Drawing.Size(47, 17);
+            this.lblStockProd.TabIndex = 2;
+            this.lblStockProd.Text = "Stock:";
+            // 
+            // lblPrecioProd
+            // 
+            this.lblPrecioProd.AutoSize = true;
+            this.lblPrecioProd.Location = new System.Drawing.Point(3, 27);
+            this.lblPrecioProd.Name = "lblPrecioProd";
+            this.lblPrecioProd.Size = new System.Drawing.Size(52, 17);
+            this.lblPrecioProd.TabIndex = 1;
+            this.lblPrecioProd.Text = "Precio:";
+            // 
+            // lblNombreProd
+            // 
+            this.lblNombreProd.AutoSize = true;
+            this.lblNombreProd.Location = new System.Drawing.Point(3, 10);
+            this.lblNombreProd.Name = "lblNombreProd";
+            this.lblNombreProd.Size = new System.Drawing.Size(123, 17);
+            this.lblNombreProd.TabIndex = 0;
+            this.lblNombreProd.Text = "Nombre Producto:";
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(851, 226);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(116, 36);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btn_EliminarClick);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(851, 170);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(116, 35);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Editar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btn_EditarClick);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(851, 116);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 36);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btn_AgregarProd_Click);
             // 
             // dataGridView1
             // 
@@ -201,48 +279,7 @@ namespace ProyectoRestaurante
             this.dataGridView1.Size = new System.Drawing.Size(445, 390);
             this.dataGridView1.TabIndex = 0;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(453, 2);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(324, 389);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(851, 116);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 36);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(851, 170);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 35);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(851, 226);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(116, 36);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // VistaGestiónProductos
+            // VistaGestiónProductos3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -250,9 +287,10 @@ namespace ProyectoRestaurante
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "VistaGestiónProductos";
+            this.Name = "VistaGestiónProductos3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VistaGestiónProductos";
+            this.Load += new System.EventHandler(this.VistaGestionProductos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -261,6 +299,8 @@ namespace ProyectoRestaurante
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -283,6 +323,9 @@ namespace ProyectoRestaurante
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblStockProd;
+        private System.Windows.Forms.Label lblPrecioProd;
+        private System.Windows.Forms.Label lblNombreProd;
     }
 }
