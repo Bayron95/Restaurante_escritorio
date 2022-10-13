@@ -32,8 +32,8 @@ namespace ProyectoRestaurante.DAO
                 ListaGenerica.Add(new PedidoDto
                 {
                     Id = LeerPedidos.GetInt32(0),
-                    Id_mesa = LeerPedidos.GetInt32(3),
-                    Estado_pedido = LeerPedidos.GetInt32(5)
+                    Id_mesa = LeerPedidos.GetInt32(1),
+                    Estado_pedido = LeerPedidos.GetInt32(4)
                 });
 
             }
