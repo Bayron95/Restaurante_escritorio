@@ -47,6 +47,9 @@ namespace ProyectoRestaurante
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nro_mesa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado_pedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -120,6 +123,9 @@ namespace ProyectoRestaurante
             // 
             // splitContainer1
             // 
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.splitContainer1.Location = new System.Drawing.Point(2, 161);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -139,7 +145,7 @@ namespace ProyectoRestaurante
             this.splitContainer1.Panel2.Controls.Add(this.btnUsuarios);
             this.splitContainer1.Panel2.Controls.Add(this.btnMesas);
             this.splitContainer1.Size = new System.Drawing.Size(1032, 397);
-            this.splitContainer1.SplitterDistance = 342;
+            this.splitContainer1.SplitterDistance = 359;
             this.splitContainer1.TabIndex = 3;
             // 
             // label2
@@ -154,12 +160,22 @@ namespace ProyectoRestaurante
             // 
             // dgvPedidos
             // 
+            this.dgvPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvPedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPedidos.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.nro_mesa,
+            this.Estado_pedido});
             this.dgvPedidos.Location = new System.Drawing.Point(7, 41);
             this.dgvPedidos.Name = "dgvPedidos";
+            this.dgvPedidos.RowHeadersVisible = false;
             this.dgvPedidos.RowHeadersWidth = 51;
             this.dgvPedidos.RowTemplate.Height = 24;
-            this.dgvPedidos.Size = new System.Drawing.Size(330, 313);
+            this.dgvPedidos.Size = new System.Drawing.Size(339, 344);
             this.dgvPedidos.TabIndex = 0;
             // 
             // btnResumenDatos
@@ -188,7 +204,7 @@ namespace ProyectoRestaurante
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(115, 99);
             this.btnProductos.TabIndex = 2;
-            this.btnProductos.Text = "Productos";
+            this.btnProductos.Text = "Platos";
             this.btnProductos.UseVisualStyleBackColor = true;
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
@@ -253,6 +269,27 @@ namespace ProyectoRestaurante
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "nro_pedido";
+            this.ID.HeaderText = "Nro Pedido";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            // 
+            // nro_mesa
+            // 
+            this.nro_mesa.DataPropertyName = "mesa";
+            this.nro_mesa.HeaderText = "Mesa";
+            this.nro_mesa.MinimumWidth = 6;
+            this.nro_mesa.Name = "nro_mesa";
+            // 
+            // Estado_pedido
+            // 
+            this.Estado_pedido.DataPropertyName = "estado";
+            this.Estado_pedido.HeaderText = "Estado";
+            this.Estado_pedido.MinimumWidth = 6;
+            this.Estado_pedido.Name = "Estado_pedido";
+            // 
             // VistaHomeAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -301,5 +338,8 @@ namespace ProyectoRestaurante
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblNameUser;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nro_mesa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado_pedido;
     }
 }

@@ -41,6 +41,8 @@
     <Reference Include="Oracle.ManagedDataAccess, Version=4.122.21.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
       <HintPath>..\packages\Oracle.ManagedDataAccess.21.7.0\lib\net462\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -69,6 +71,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -78,15 +81,21 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="C_Negocio\CN_Mesas.cs" />
+    <Compile Include="C_Negocio\CN_Pedidos.cs" />
+    <Compile Include="C_Negocio\CN_Platos.cs" />
     <Compile Include="C_Negocio\CN_Usuarios.cs" />
     <Compile Include="DAO\ConexionBD.cs" />
     <Compile Include="DAO\MesasDao.cs" />
-    <Compile Include="DAO\PedidoDao.cs" />
+    <Compile Include="DAO\PedidosDao.cs" />
+    <Compile Include="DAO\PlatosDao.cs" />
     <Compile Include="DAO\UsuariosDao.cs" />
     <Compile Include="DTO\MesasDto.cs" />
     <Compile Include="DTO\PedidoDto.cs" />
+    <Compile Include="DTO\PlatosDto.cs" />
     <Compile Include="DTO\ProductosDto.cs" />
     <Compile Include="DTO\ProveedoresDto.cs" />
     <Compile Include="DTO\UsuariosDto.cs" />
@@ -101,17 +110,17 @@
     <Compile Include="Vistas\Administrador\VistaGestionMesas.Designer.cs">
       <DependentUpon>VistaGestionMesas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Administrador\VistaGestionPlatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Administrador\VistaGestionPlatos.Designer.cs">
+      <DependentUpon>VistaGestionPlatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Administrador\VistaGestionProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\Administrador\VistaGestionProveedor.Designer.cs">
       <DependentUpon>VistaGestionProveedor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Administrador\VistaGestionProductos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Administrador\VistaGestionProductos.Designer.cs">
-      <DependentUpon>VistaGestionProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Administrador\VistaGestionReportes.cs">
       <SubType>Form</SubType>
@@ -157,6 +166,12 @@
     <Compile Include="Vistas\Administrador\VistaHomeAdministrador.Designer.cs">
       <DependentUpon>VistaHomeAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\viewCrud\AgregarPlato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\viewCrud\AgregarPlato.Designer.cs">
+      <DependentUpon>AgregarPlato.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\viewCrud\AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,8 +197,8 @@
     <EmbeddedResource Include="Vistas\Administrador\VistaGestionMesas.resx">
       <DependentUpon>VistaGestionMesas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Administrador\VistaGestionProductos.resx">
-      <DependentUpon>VistaGestionProductos.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\Administrador\VistaGestionPlatos.resx">
+      <DependentUpon>VistaGestionPlatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Administrador\VistaGestionProveedor.resx">
       <DependentUpon>VistaGestionProveedor.cs</DependentUpon>
@@ -208,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Administrador\VistaHomeAdministrador.resx">
       <DependentUpon>VistaHomeAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\viewCrud\AgregarPlato.resx">
+      <DependentUpon>AgregarPlato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\viewCrud\AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
@@ -241,7 +259,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\img\LogoResto.png" />
   </ItemGroup>

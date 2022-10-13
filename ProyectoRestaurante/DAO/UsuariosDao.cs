@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 using System.Data;
 using ProyectoRestaurante.DTO;
 using Oracle.ManagedDataAccess.Client;
+using ProyectoRestaurante.Vistas;
+using System.Windows.Forms;
 
 namespace ProyectoRestaurante.DAO
 {
-    class UsuariosDao:ConexionBD
+    class UsuariosDao : ConexionBD
     {
 
         OracleDataReader LeerFilas;
@@ -46,7 +48,7 @@ namespace ProyectoRestaurante.DAO
 
         }
 
-        public void CreateUsuario(string usuario, string password, string tipoUsurio) 
+        public void CreateUsuario(string usuario, string password, string tipoUsurio)
         {
 
             cmd.Connection = oraConn;
@@ -54,15 +56,15 @@ namespace ProyectoRestaurante.DAO
 
             cmd.CommandText = "SP_CREATE_USUARIO";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("v_usuario",usuario);
-            cmd.Parameters.Add("V_password",password);
-            cmd.Parameters.Add("V_tipo_usuario",tipoUsurio);
+            cmd.Parameters.Add("v_usuario", usuario);
+            cmd.Parameters.Add("V_password", password);
+            cmd.Parameters.Add("V_tipo_usuario", tipoUsurio);
             cmd.ExecuteNonQuery();
-            
+
             oraConn.Close();
         }
 
-        public void UpdateUsuario(int id, string usuario, string password, string tipoUsurio) 
+        public void UpdateUsuario(int id, string usuario, string password, string tipoUsurio)
         {
 
             cmd.Connection = oraConn;
@@ -74,12 +76,12 @@ namespace ProyectoRestaurante.DAO
             cmd.Parameters.Add("v_usuario", usuario);
             cmd.Parameters.Add("V_password", password);
             cmd.Parameters.Add("V_tipo_usuario", tipoUsurio);
-            
+
             cmd.ExecuteNonQuery();
 
             oraConn.Close();
         }
-        public void DeleteUsuario(int id_user) 
+        public void DeleteUsuario(int id_user)
         {
 
 
@@ -94,5 +96,69 @@ namespace ProyectoRestaurante.DAO
             oraConn.Close();
         }
 
+        public void login(string usuario, string password)
+        {
+            VistaLogin vlogin = new VistaLogin();
+            try
+            {
+                //abro conexión
+                oraConn.Open();
+                //Consulta en variable
+                OracleCommand comando = new OracleCommand("SELECT USUARIO, TIPO_USUARIO " +
+                                                          "FROM USUARIOS " +
+                                                          "WHERE USUARIO =:nombre " +
+                                                          "AND PASSWORD =:password", oraConn);
+
+                // solicito los datos de entrada
+                comando.Parameters.Add(":nombre", usuario);
+                comando.Parameters.Add(":password", password);
+
+                OracleDataAdapter oda = new OracleDataAdapter(comando);
+
+                DataTable dt = new DataTable();
+                oda.Fill(dt);
+
+                if (dt.Rows.Count == 1)
+                {
+                    //vlogin.Hide();
+                    if (dt.Rows[0][1].ToString() == "Administrador")
+                    {
+                        MessageBox.Show("Bienvenido! \n" + vlogin.textBoxUser.Text);
+                        new VistaHomeAdministrador(dt.Rows[0][0].ToString()).Show();
+                        vlogin.Hide();
+                    }
+                    else if (dt.Rows[0][1].ToString() == "Cocina")
+                    {
+                        new VistaCocina(dt.Rows[0][0].ToString()).Show();
+                    }
+                    else if (dt.Rows[0][1].ToString() == "Finanzas")
+                    {
+                        new VistaFinanzas(dt.Rows[0][0].ToString()).Show();
+                    }
+                    else if (dt.Rows[0][1].ToString() == "Bodega")
+                    {
+                        new VistaBodega(dt.Rows[0][0].ToString()).Show();
+                    }
+                    //else if (dt.Rows[0][1].ToString() == "Garzon")
+                    //{
+                    //    new VistaCocina(dt.Rows[0][0].ToString()).Show();
+                    //}
+                }
+                else
+                {
+                    MessageBox.Show("Usuario y/o contraseña incorrecta");
+                }
+
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                oraConn.Close();
+            }
+        }
     }
 }

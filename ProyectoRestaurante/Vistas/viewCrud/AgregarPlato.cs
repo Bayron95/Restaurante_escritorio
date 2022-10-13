@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoRestaurante.C_Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,17 +7,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ProyectoRestaurante.DAO;
 using System.Windows.Forms;
-using ProyectoRestaurante.C_Negocio;
 
 namespace ProyectoRestaurante.Vistas.viewCrud
 {
-    public partial class AgregarUsuario : Form
+    public partial class AgregarPlato : Form
     {
-        CN_Usuarios cn_usr = new CN_Usuarios();
-
-        public AgregarUsuario()
+        CN_Platos cnplato = new CN_Platos();
+        public AgregarPlato()
         {
             InitializeComponent();
         }
@@ -32,43 +30,38 @@ namespace ProyectoRestaurante.Vistas.viewCrud
         protected void insertar()
         {
             UpdateEventArgs args = new UpdateEventArgs();
-            UpdateEventHandler.Invoke(this,args);
+            UpdateEventHandler.Invoke(this, args);
         }
-        private void btnAdd_Click(object sender, EventArgs e)
+
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
             AgregarNuevo();
             this.Close();
             insertar();
         }
 
-
         public void AgregarNuevo()
         {
-            
-            if (txtUsuario.Text != "")
+
+            if (txtNombrePlato.Text != "")
             {
-                if (txtPassword.Text != "")
+                if (txtPrecio.Text != "")
                 {
-                    cn_usr.AgregarUsuario(txtUsuario.Text, txtPassword.Text, cboTipoUser.Text);
-                                        
+                    cnplato.AgregarPlatos(txtNombrePlato.Text, Convert.ToInt32(txtPrecio.Text), txtDescripcion.Text);
+
                 }
                 else
                 {
-                    MessageBox.Show("Ingrese una contraseña");
+                    MessageBox.Show("Ingrese un precio");
                 }
             }
             else
             {
-                MessageBox.Show("Ingrese un nombre de usuario");
+                MessageBox.Show("Ingrese un nombre de plato");
             }
 
-            MessageBox.Show("Usuario creado con exito!");
+            MessageBox.Show("Plato creado con exito!");
 
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

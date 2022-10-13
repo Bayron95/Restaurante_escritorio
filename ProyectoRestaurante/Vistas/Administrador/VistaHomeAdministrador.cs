@@ -57,7 +57,7 @@ namespace ProyectoRestaurante
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            VistaGestiónProductos productos = new VistaGestiónProductos();
+            VistaGestionPlatos productos = new VistaGestionPlatos();
             productos.Show();
             this.Hide();
         }
@@ -78,12 +78,12 @@ namespace ProyectoRestaurante
 
         private void VistaHomeAdministrador_Load(object sender, EventArgs e)
         {
-            //AllPedidos();
+            AllPedidos();
         }
 
         private void AllPedidos()
         {
-            PedidoDao usr = new PedidoDao();
+            PedidosDao usr = new PedidosDao();
             dgvPedidos.DataSource = usr.VerPedidos();
         }
     }

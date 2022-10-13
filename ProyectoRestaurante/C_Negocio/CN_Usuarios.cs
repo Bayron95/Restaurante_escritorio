@@ -15,12 +15,10 @@ namespace ProyectoRestaurante.C_Negocio
 
 
         //metodo que devuelve una tabla por medio del objeto usr.VerUsuarios
-        public DataTable ListarUsuarios()
+        public void ListarUsuarios()
         {
-            DataTable dt = new DataTable();
-            //dt = usr.VerUsuarios();
-            return dt;
-        } 
+            usr.VerUsuarios();
+        }
 
         public void AgregarUsuario(string usuario, string password, string tipoUsuario)
         {
@@ -32,7 +30,15 @@ namespace ProyectoRestaurante.C_Negocio
             usr.UpdateUsuario(Convert.ToInt32(id), usuario, password, tipoUsuario);
         }
 
+        public void EliminarUsuario(int id)
+        {
+            usr.DeleteUsuario(Convert.ToInt32(id));
+        }
 
+        public void LoginUsuario(string usuario, string password)
+        {
+            usr.login(usuario, password);
+        }
     }
 
     
