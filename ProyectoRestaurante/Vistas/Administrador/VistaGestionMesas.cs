@@ -15,11 +15,11 @@ namespace ProyectoRestaurante
 {
     public partial class VistaGestionMesas : Form
     {
-        public VistaGestionMesas()
+        public VistaGestionMesas(string usuario)
         {
             InitializeComponent();
 
-            //lblNameUser.Text = usuario;
+            lblNameUser.Text = usuario;
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -40,8 +40,6 @@ namespace ProyectoRestaurante
         {
             MesasDao mesaDao = new MesasDao();
             List<MesasDto> lista = mesaDao.VerMesas();
-
-            
             foreach (var num in lista)
             {
                 Button btn = new Button();

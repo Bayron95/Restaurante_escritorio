@@ -96,56 +96,56 @@ namespace ProyectoRestaurante.DAO
             oraConn.Close();
         }
 
-        public void login(string usuario, string password)
+        public bool login(string usuario, string password)
         {
-            VistaLogin vlogin = new VistaLogin();
+            bool res = false;
+
             try
             {
                 //abro conexión
                 oraConn.Open();
                 //Consulta en variable
-                OracleCommand comando = new OracleCommand("SELECT USUARIO, TIPO_USUARIO " +
-                                                          "FROM USUARIOS " +
-                                                          "WHERE USUARIO =:nombre " +
-                                                          "AND PASSWORD =:password", oraConn);
-
+                cmd = new OracleCommand("SP_LOGIN_USUARIO", oraConn);
+                cmd.CommandType = CommandType.StoredProcedure;
                 // solicito los datos de entrada
-                comando.Parameters.Add(":nombre", usuario);
-                comando.Parameters.Add(":password", password);
+                cmd.Parameters.Add("v_usuarios", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+                cmd.Parameters.Add("v_nombre", usuario);
+                cmd.Parameters.Add("v_password", password);
 
-                OracleDataAdapter oda = new OracleDataAdapter(comando);
+                OracleDataAdapter oda = new OracleDataAdapter(cmd);
 
                 DataTable dt = new DataTable();
                 oda.Fill(dt);
 
                 if (dt.Rows.Count == 1)
                 {
-                    //vlogin.Hide();
-                    if (dt.Rows[0][1].ToString() == "Administrador")
+
+                    if (dt.Rows[0][3].ToString() == "Administrador")
                     {
-                        MessageBox.Show("Bienvenido! \n" + vlogin.textBoxUser.Text);
-                        new VistaHomeAdministrador(dt.Rows[0][0].ToString()).Show();
-                        
+                        MessageBox.Show("Bienvenido! \n" + usuario);
+                        new VistaHomeAdministrador(dt.Rows[0][1].ToString()).Show();
                     }
-                    else if (dt.Rows[0][1].ToString() == "Cocina")
+                    else if (dt.Rows[0][3].ToString() == "Cocina")
                     {
-                        new VistaCocina(dt.Rows[0][0].ToString()).Show();
+                        MessageBox.Show("Bienvenido! \n" + usuario);
+                        new VistaCocina(dt.Rows[0][1].ToString()).Show();
                     }
-                    else if (dt.Rows[0][1].ToString() == "Finanzas")
+                    else if (dt.Rows[0][3].ToString() == "Finanzas")
                     {
-                        new VistaFinanzas(dt.Rows[0][0].ToString()).Show();
+                        MessageBox.Show("Bienvenido! \n" + usuario);
+                        new VistaFinanzas(dt.Rows[0][1].ToString()).Show();
                     }
-                    else if (dt.Rows[0][1].ToString() == "Bodega")
+                    else if (dt.Rows[0][3].ToString() == "Bodega")
                     {
-                        new VistaBodega(dt.Rows[0][0].ToString()).Show();
+                        MessageBox.Show("Bienvenido! \n" + usuario);
+                        new VistaBodega(dt.Rows[0][1].ToString()).Show();
                     }
-                    vlogin.Hide();
+                    res = true;
                 }
                 else
                 {
                     MessageBox.Show("Usuario y/o contraseña incorrecta");
                 }
-
             }
             catch (Exception e)
             {
@@ -156,6 +156,7 @@ namespace ProyectoRestaurante.DAO
             {
                 oraConn.Close();
             }
+            return res;
         }
     }
 }

@@ -36,12 +36,19 @@ namespace ProyectoRestaurante.C_Negocio
             usr.DeleteUsuario(Convert.ToInt32(id));
         }
 
-        public void LoginUsuario(string usuario, string password)
+        public int LoginUsuario(string usuario, string password)
         {
-            usr.login(usuario, password);
+            int x = 0;
+
+            if (usr.login(usuario, password) == true)
+            {
+                x = 1;
+            }
+
+            return x;
         }
     }
 
-    
+
 
 }

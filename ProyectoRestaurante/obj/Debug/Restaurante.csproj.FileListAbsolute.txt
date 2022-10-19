@@ -133,7 +133,6 @@ C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\Proyect
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaBodega.resources
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaCocina.resources
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaHomeAdministrador.resources
-C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrud.AgregarPlato.resources
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrud.AgregarProveedor.resources
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrud.AgregarUsuario.resources
 C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrud.EditarProveedor.resources

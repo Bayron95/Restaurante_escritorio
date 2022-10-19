@@ -21,13 +21,30 @@ namespace ProyectoRestaurante
             InitializeComponent();
         }
 
-        CN_Usuarios cn_usr = new CN_Usuarios();
+        
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            CN_Usuarios cn_usr = new CN_Usuarios();
 
-            cn_usr.LoginUsuario(this.textBoxUser.Text, this.textBoxPassword.Text);
-            
+            if (textBoxUser.Text.Trim() != "")
+            {
+                if (textBoxPassword.Text.Trim() != "")
+                {
+                    if (cn_usr.LoginUsuario(this.textBoxUser.Text, this.textBoxPassword.Text) == 1)
+                    {
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese una contraseña");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ingrese un usuario");
+            }
         }
 
     }

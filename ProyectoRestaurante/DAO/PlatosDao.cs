@@ -9,7 +9,7 @@ using ProyectoRestaurante.DTO;
 
 namespace ProyectoRestaurante.DAO
 {
-    class PlatosDao:ConexionBD
+    class PlatosDao : ConexionBD
     {
         OracleDataReader LeerFilas;
         OracleCommand cmd = new OracleCommand();
@@ -31,7 +31,8 @@ namespace ProyectoRestaurante.DAO
                     Id_plato = LeerFilas.GetInt32(0),
                     Nombre_plato = LeerFilas.GetString(1),
                     Precio_plato = LeerFilas.GetInt32(2),
-                    Descripcion_plato = LeerFilas.GetString(3)
+                    Descripcion_plato = LeerFilas.GetString(3),
+                    Estado_plato = LeerFilas.GetInt32(4)
                 });
             }
             LeerFilas.Close();
@@ -40,7 +41,7 @@ namespace ProyectoRestaurante.DAO
             return ListaGenerica;
         }
 
-        public void CreatePlatos(string nombre, int precio, string descripcion)
+        public void CreatePlatos(string nombre, int precio, string descripcion, int estado)
         {
             cmd.Connection = oraConn;
             oraConn.Open();
@@ -49,11 +50,12 @@ namespace ProyectoRestaurante.DAO
             cmd.Parameters.Add("v_nombre", nombre);
             cmd.Parameters.Add("V_precio", precio);
             cmd.Parameters.Add("V_descripcion", descripcion);
+            cmd.Parameters.Add("v_estado_mesa", estado);
             cmd.ExecuteNonQuery();
             oraConn.Close();
         }
 
-        public void UpdatePlatos(int id, string nombre, int precio, string descripcion)
+        public void UpdatePlatos(int id, string nombre, int precio, string descripcion, int estado)
         {
             cmd.Connection = oraConn;
             oraConn.Open();
@@ -61,8 +63,9 @@ namespace ProyectoRestaurante.DAO
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("v_id", id);
             cmd.Parameters.Add("v_nombre", nombre);
-            cmd.Parameters.Add("V_precio", precio);
-            cmd.Parameters.Add("V_descripcion", descripcion);
+            cmd.Parameters.Add("v_precio_Plato", precio);
+            cmd.Parameters.Add("v_descripcion_Plato", descripcion);
+            cmd.Parameters.Add("v_estado_plato", estado);
             cmd.ExecuteNonQuery();
             oraConn.Close();
         }

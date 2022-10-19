@@ -168,12 +168,6 @@
     <Compile Include="Vistas\Administrador\VistaHomeAdministrador.Designer.cs">
       <DependentUpon>VistaHomeAdministrador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\viewCrud\AgregarPlato.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\viewCrud\AgregarPlato.Designer.cs">
-      <DependentUpon>AgregarPlato.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\viewCrud\AgregarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,9 +237,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Administrador\VistaHomeAdministrador.resx">
       <DependentUpon>VistaHomeAdministrador.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\viewCrud\AgregarPlato.resx">
-      <DependentUpon>AgregarPlato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\viewCrud\AgregarProveedor.resx">
       <DependentUpon>AgregarProveedor.cs</DependentUpon>

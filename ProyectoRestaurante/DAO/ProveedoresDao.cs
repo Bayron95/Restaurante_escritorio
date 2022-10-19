@@ -48,38 +48,46 @@ namespace ProyectoRestaurante.DAO
             return ListaGenerica;
 
         }
+        //public void CreateProveedores(string nombre, string rut, string direccion, int telefono, string correo)
 
-        public void CreateProveedores(int capacidad, string estado)
+
+        public void CreateProveedores(ProveedoresDto proveedor)
         {
             cmd.Connection = oraConn;
             oraConn.Open();
-            cmd.CommandText = "SP_CREATE_PROVEEDORES";
+            cmd.CommandText = "SP_CREATE_PROVEEDOR";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("V_capacidad", capacidad);
-            cmd.Parameters.Add("V_estado", estado);
+            cmd.Parameters.Add("v_nombre_prov", proveedor.NOMBRE);
+            cmd.Parameters.Add("V_rut", proveedor.RUT);
+            cmd.Parameters.Add("v_direccion", proveedor.DIRECCION);
+            cmd.Parameters.Add("v_telefono", proveedor.TELEFONO);
+            cmd.Parameters.Add("v_correo", proveedor.CORREO);
             cmd.ExecuteNonQuery();
             oraConn.Close();
         }
 
-        public void UpdateProveedores(int id, int capacidad, string estado)
+        public void UpdateProveedores(ProveedoresDto proveedor)
         {
             cmd.Connection = oraConn;
             oraConn.Open();
-            cmd.CommandText = "SP_UPDATE_PROVEEDORES";
+            cmd.CommandText = "SP_UPDATE_PROVEEDOR";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("v_id", id);
-            cmd.Parameters.Add("V_capacidad", capacidad);
-            cmd.Parameters.Add("V_estado", estado);
+            cmd.Parameters.Add("v_id", proveedor.ID_PROVEEDOR);
+            cmd.Parameters.Add("v_nombre_prov", proveedor.NOMBRE);
+            cmd.Parameters.Add("V_rut", proveedor.RUT);
+            cmd.Parameters.Add("v_direccion", proveedor.DIRECCION);
+            cmd.Parameters.Add("v_telefono", proveedor.TELEFONO);
+            cmd.Parameters.Add("v_correo", proveedor.CORREO);
             cmd.ExecuteNonQuery();
             oraConn.Close();
         }
-        public void DeleteProveedores(int id_mesa)
+        public void DeleteProveedores(ProveedoresDto proveedor)
         {
             cmd.Connection = oraConn;
             oraConn.Open();
-            cmd.CommandText = "SP_DELETE_PROVEEDORES";
+            cmd.CommandText = "SP_DELETE_PROVEEDOR";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("v_id", id_mesa);
+            cmd.Parameters.Add("v_id", proveedor.ID_PROVEEDOR);
             cmd.ExecuteNonQuery();
             oraConn.Close();
         }

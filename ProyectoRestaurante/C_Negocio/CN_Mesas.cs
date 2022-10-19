@@ -11,6 +11,7 @@ namespace ProyectoRestaurante.C_Negocio
     {
         private MesasDao mesa = new MesasDao();
 
+
         public void ListarMesas()
         {
             mesa.VerMesas();
@@ -21,15 +22,14 @@ namespace ProyectoRestaurante.C_Negocio
             mesa.CreateMesas(capacidad, estado);
         }
 
-        public void EditarMesas(int id, int capacidad, string estado)
+        public void ActualizarMesas(int id, string estado)
         {
-            mesa.UpdateMesas(Convert.ToInt32(id), capacidad, estado);
+            mesa.UpdateMesas(Convert.ToInt32(id), estado);
         }
 
         public void EliminarMesas(int id)
         {
             mesa.DeleteMesas(Convert.ToInt32(id));
         }
-
     }
 }

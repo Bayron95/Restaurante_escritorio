@@ -15,16 +15,16 @@ namespace ProyectoRestaurante
     public partial class VistaGestionUsuarios : Form
     {
 
-        public VistaGestionUsuarios()
+        public VistaGestionUsuarios(string usuario)
         {
 
             InitializeComponent();
-            //lblNameUser.Text
+            lblNameUser.Text = usuario;
         }
        
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            VistaHomeAdministrador homeAdm = new VistaHomeAdministrador();
+            VistaHomeAdministrador homeAdm = new VistaHomeAdministrador(lblNameUser.Text);
             homeAdm.Show();
             this.Close();
         }

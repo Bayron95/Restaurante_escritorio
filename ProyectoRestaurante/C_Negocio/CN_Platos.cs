@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoRestaurante.C_Negocio
 {
-    class CN_Platos
+    public class CN_Platos
     {
 
         private PlatosDao plato = new PlatosDao();
@@ -18,20 +18,22 @@ namespace ProyectoRestaurante.C_Negocio
             plato.VerPlatos();
         }
 
-        public void AgregarPlatos(string nombre, int precio, string descripcion)
+        public void AgregarPlatos(string nombre, int precio, string descripcion, int estado)
         {
-            plato.CreatePlatos(nombre, precio, descripcion);
+            plato.CreatePlatos(nombre, precio, descripcion, estado);
         }
 
-        public void EditarPlatos(int id, string nombre, int precio, string descripcion)
+        public void EditarPlatos(int id, string nombre, int precio, string descripcion, int estado)
         {
-            plato.UpdatePlatos(Convert.ToInt32(id), nombre, precio, descripcion);
+            plato.UpdatePlatos(id, nombre, precio, descripcion, estado);
         }
 
         public void EliminarPlatos(int id)
         {
-            plato.DeletePlatos(Convert.ToInt32(id));
+            plato.DeletePlatos(id);
         }
+
+
 
     }
 }

@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 using System.Data;
 using ProyectoRestaurante.DTO;
 using Oracle.ManagedDataAccess.Client;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace ProyectoRestaurante.DAO
 {
-    class MesasDao:ConexionBD
+    class MesasDao : ConexionBD
     {
         OracleDataReader LeerFilas;
         OracleCommand cmd = new OracleCommand();
@@ -17,12 +19,12 @@ namespace ProyectoRestaurante.DAO
         //metodos crud
         public List<MesasDto> VerMesas()
         {
-            cmd.Connection  = oraConn;
+            oraConn.Open();
+
+            cmd.Connection = oraConn;
             cmd.CommandText = "SP_VER_MESAS";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("v_mesas", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
-
-            oraConn.Open();
 
             LeerFilas = cmd.ExecuteReader();
             List<MesasDto> ListaGenerica = new List<MesasDto>();
@@ -37,7 +39,7 @@ namespace ProyectoRestaurante.DAO
                 });
 
             }
-
+            
             LeerFilas.Close();
             oraConn.Close();
 
@@ -57,14 +59,13 @@ namespace ProyectoRestaurante.DAO
             oraConn.Close();
         }
 
-        public void UpdateMesas(int id, int capacidad, string estado)
+        public void UpdateMesas(int id, string estado)
         {
             cmd.Connection = oraConn;
             oraConn.Open();
-            cmd.CommandText = "SP_UPDATE_MESA";
+            cmd.CommandText = "SP_UPDATE_ESTADO_MESA";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("v_id", id);
-            cmd.Parameters.Add("V_capacidad", capacidad);
             cmd.Parameters.Add("V_estado", estado);
             cmd.ExecuteNonQuery();
             oraConn.Close();
@@ -80,6 +81,7 @@ namespace ProyectoRestaurante.DAO
             oraConn.Close();
         }
 
+        
 
     }
 }

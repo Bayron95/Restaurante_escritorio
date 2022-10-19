@@ -39,12 +39,25 @@ namespace ProyectoRestaurante
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.flpPlatos = new System.Windows.Forms.FlowLayoutPanel();
             this.dgvPlatos = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.lblPrecio = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
+            this.rtxtDescripcion = new System.Windows.Forms.RichTextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pbx_Image = new System.Windows.Forms.PictureBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.chkBoxEstadoDisp = new System.Windows.Forms.CheckBox();
+            this.btnCancelarEdit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,6 +65,8 @@ namespace ProyectoRestaurante
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlatos)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Image)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -173,14 +188,6 @@ namespace ProyectoRestaurante
             this.label3.TabIndex = 2;
             this.label3.Text = "Platos";
             // 
-            // flpPlatos
-            // 
-            this.flpPlatos.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.flpPlatos.Location = new System.Drawing.Point(453, 2);
-            this.flpPlatos.Name = "flpPlatos";
-            this.flpPlatos.Size = new System.Drawing.Size(324, 389);
-            this.flpPlatos.TabIndex = 1;
-            // 
             // dgvPlatos
             // 
             this.dgvPlatos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -192,7 +199,6 @@ namespace ProyectoRestaurante
             this.dgvPlatos.RowTemplate.Height = 24;
             this.dgvPlatos.Size = new System.Drawing.Size(445, 390);
             this.dgvPlatos.TabIndex = 0;
-            this.dgvPlatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPlatos_CellContentClick);
             // 
             // panel3
             // 
@@ -200,21 +206,143 @@ namespace ProyectoRestaurante
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.btnEliminar);
             this.panel3.Controls.Add(this.btnEditar);
             this.panel3.Controls.Add(this.btnAgregar);
-            this.panel3.Controls.Add(this.flpPlatos);
             this.panel3.Controls.Add(this.dgvPlatos);
             this.panel3.Location = new System.Drawing.Point(0, 164);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1034, 395);
             this.panel3.TabIndex = 8;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel4.Controls.Add(this.btnCancelarEdit);
+            this.panel4.Controls.Add(this.chkBoxEstadoDisp);
+            this.panel4.Controls.Add(this.btnGuardar);
+            this.panel4.Controls.Add(this.txtPrecio);
+            this.panel4.Controls.Add(this.lblPrecio);
+            this.panel4.Controls.Add(this.lblID);
+            this.panel4.Controls.Add(this.rtxtDescripcion);
+            this.panel4.Controls.Add(this.txtNombre);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.lblNombre);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.pbx_Image);
+            this.panel4.Location = new System.Drawing.Point(453, 5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(426, 390);
+            this.panel4.TabIndex = 10;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(204, 343);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(85, 34);
+            this.btnGuardar.TabIndex = 22;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(276, 115);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 22);
+            this.txtPrecio.TabIndex = 21;
+            // 
+            // lblPrecio
+            // 
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Location = new System.Drawing.Point(201, 118);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(59, 17);
+            this.lblPrecio.TabIndex = 20;
+            this.lblPrecio.Text = "Precio:";
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Location = new System.Drawing.Point(273, 25);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(49, 17);
+            this.lblID.TabIndex = 19;
+            this.lblID.Text = "id_text";
+            this.lblID.Visible = false;
+            // 
+            // rtxtDescripcion
+            // 
+            this.rtxtDescripcion.Location = new System.Drawing.Point(19, 225);
+            this.rtxtDescripcion.Name = "rtxtDescripcion";
+            this.rtxtDescripcion.Size = new System.Drawing.Size(357, 92);
+            this.rtxtDescripcion.TabIndex = 17;
+            this.rtxtDescripcion.Text = "";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(276, 65);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 22);
+            this.txtNombre.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(201, 163);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 17);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Estado:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(16, 205);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 17);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Descripción:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(201, 68);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(69, 17);
+            this.lblNombre.TabIndex = 12;
+            this.lblNombre.Text = "Nombre:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(201, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 17);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "ID:";
+            // 
+            // pbx_Image
+            // 
+            this.pbx_Image.Location = new System.Drawing.Point(7, 6);
+            this.pbx_Image.Name = "pbx_Image";
+            this.pbx_Image.Size = new System.Drawing.Size(180, 171);
+            this.pbx_Image.TabIndex = 0;
+            this.pbx_Image.TabStop = false;
+            // 
             // btnEliminar
             // 
             this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminar.Location = new System.Drawing.Point(851, 226);
+            this.btnEliminar.Location = new System.Drawing.Point(906, 223);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(116, 36);
             this.btnEliminar.TabIndex = 9;
@@ -226,7 +354,7 @@ namespace ProyectoRestaurante
             // 
             this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditar.Location = new System.Drawing.Point(851, 170);
+            this.btnEditar.Location = new System.Drawing.Point(906, 168);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(116, 35);
             this.btnEditar.TabIndex = 8;
@@ -238,13 +366,33 @@ namespace ProyectoRestaurante
             // 
             this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAgregar.Location = new System.Drawing.Point(851, 116);
+            this.btnAgregar.Location = new System.Drawing.Point(906, 113);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(116, 36);
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // chkBoxEstadoDisp
+            // 
+            this.chkBoxEstadoDisp.AutoSize = true;
+            this.chkBoxEstadoDisp.Location = new System.Drawing.Point(276, 163);
+            this.chkBoxEstadoDisp.Name = "chkBoxEstadoDisp";
+            this.chkBoxEstadoDisp.Size = new System.Drawing.Size(96, 21);
+            this.chkBoxEstadoDisp.TabIndex = 23;
+            this.chkBoxEstadoDisp.Text = "Disponible";
+            this.chkBoxEstadoDisp.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelarEdit
+            // 
+            this.btnCancelarEdit.Location = new System.Drawing.Point(312, 343);
+            this.btnCancelarEdit.Name = "btnCancelarEdit";
+            this.btnCancelarEdit.Size = new System.Drawing.Size(85, 34);
+            this.btnCancelarEdit.TabIndex = 24;
+            this.btnCancelarEdit.Text = "Cancelar";
+            this.btnCancelarEdit.UseVisualStyleBackColor = true;
+            this.btnCancelarEdit.Click += new System.EventHandler(this.btnCancelarEdit_Click);
             // 
             // VistaGestionPlatos
             // 
@@ -267,6 +415,9 @@ namespace ProyectoRestaurante
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlatos)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_Image)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -283,11 +434,24 @@ namespace ProyectoRestaurante
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.FlowLayoutPanel flpPlatos;
         private System.Windows.Forms.DataGridView dgvPlatos;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pbx_Image;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.RichTextBox rtxtDescripcion;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.Label lblPrecio;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.CheckBox chkBoxEstadoDisp;
+        private System.Windows.Forms.Button btnCancelarEdit;
     }
 }

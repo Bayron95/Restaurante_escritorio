@@ -1,4 +1,5 @@
 ﻿using ProyectoRestaurante.DAO;
+using ProyectoRestaurante.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,19 +17,41 @@ namespace ProyectoRestaurante.C_Negocio
             pvdrs.VerProveedores();
         }
 
-        public void AgregarProveedores(int capacidad, string estado)
+        public bool AgregarProveedores(ProveedoresDto pvrs)
         {
-            pvdrs.CreateProveedores(capacidad, estado);
+            bool flag = false;
+            try
+            {
+                pvdrs.CreateProveedores(pvrs);
+                flag = true;
+            }
+            catch (Exception)
+            {
+
+                flag = false;
+            }
+            return flag;
         }
 
-        public void EditarProveedores(int id, int capacidad, string estado)
+        public bool EditarProveedores(ProveedoresDto pvrs)
         {
-            pvdrs.UpdateProveedores(Convert.ToInt32(id), capacidad, estado);
+            bool flag = false;
+            try
+            {
+                pvdrs.UpdateProveedores(pvrs);
+                flag = true;
+            }
+            catch (Exception)
+            {
+
+                flag = false;
+            }
+            return flag;
         }
 
-        public void EliminarProveedores(int id)
+        public void EliminarProveedores(ProveedoresDto pvrs)
         {
-            pvdrs.DeleteProveedores(Convert.ToInt32(id));
+            pvdrs.DeleteProveedores(pvrs);
         }
     }
 }
