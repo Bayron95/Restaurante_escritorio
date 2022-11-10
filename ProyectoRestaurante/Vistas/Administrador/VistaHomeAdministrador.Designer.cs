@@ -120,6 +120,9 @@ namespace ProyectoRestaurante
             // 
             // splitContainer1
             // 
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.splitContainer1.Location = new System.Drawing.Point(2, 161);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -139,7 +142,7 @@ namespace ProyectoRestaurante
             this.splitContainer1.Panel2.Controls.Add(this.btnUsuarios);
             this.splitContainer1.Panel2.Controls.Add(this.btnMesas);
             this.splitContainer1.Size = new System.Drawing.Size(1032, 397);
-            this.splitContainer1.SplitterDistance = 342;
+            this.splitContainer1.SplitterDistance = 359;
             this.splitContainer1.TabIndex = 3;
             // 
             // label2
@@ -154,12 +157,18 @@ namespace ProyectoRestaurante
             // 
             // dgvPedidos
             // 
+            this.dgvPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvPedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPedidos.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPedidos.Location = new System.Drawing.Point(7, 41);
             this.dgvPedidos.Name = "dgvPedidos";
+            this.dgvPedidos.RowHeadersVisible = false;
             this.dgvPedidos.RowHeadersWidth = 51;
             this.dgvPedidos.RowTemplate.Height = 24;
-            this.dgvPedidos.Size = new System.Drawing.Size(330, 313);
+            this.dgvPedidos.Size = new System.Drawing.Size(339, 344);
             this.dgvPedidos.TabIndex = 0;
             // 
             // btnResumenDatos
@@ -188,7 +197,7 @@ namespace ProyectoRestaurante
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(115, 99);
             this.btnProductos.TabIndex = 2;
-            this.btnProductos.Text = "Productos";
+            this.btnProductos.Text = "Platos";
             this.btnProductos.UseVisualStyleBackColor = true;
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 

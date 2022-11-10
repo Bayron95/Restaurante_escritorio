@@ -8,17 +8,23 @@ namespace ProyectoRestaurante.DTO
 {
     public class ProductosDto
     {
-        //variables
-        int _id_producto;
-        string _nombre_producto;
-        string _codigo_producto;
-        int _precio_producto;
-        int _stock;
 
-        public int Id_Producto { get => _id_producto; set => _id_producto = value; }
-        public string Nombre_Producto { get => _nombre_producto; set => _nombre_producto = value; }
-        public string Codigo_Producto { get => _codigo_producto; set => _codigo_producto = value; }
-        public int Precio_Producto { get => _precio_producto; set => _precio_producto = value; }
-        public int Stock { get => _stock; set => _stock = value; }
+        int _ID_PRODUCTO;
+        int _ID_PROVEEDOR;
+        int _ID_CATEGORIA;
+        string _NOMBRE;
+        string _CODIGO;
+        int _PRECIO;
+        int _IVA;
+        int _STOCK;
+
+        public int ID_PRODUCTO { get => _ID_PRODUCTO; set => _ID_PRODUCTO = value; }
+        public int ID_PROVEEDOR { get => _ID_PROVEEDOR; set => _ID_PROVEEDOR = value; }
+        public int ID_CATEGORIA { get => _ID_CATEGORIA; set => _ID_CATEGORIA = value; }
+        public string NOMBRE { get => _NOMBRE; set => _NOMBRE = value; }
+        public string CODIGO { get => _CODIGO; set => _CODIGO = value; }
+        public int PRECIO { get => _PRECIO; set => _PRECIO = value; }
+        public int IVA { get => _IVA; set => _IVA = value; }
+        public int STOCK { get => _STOCK; set => _STOCK = value; }
     }
 }

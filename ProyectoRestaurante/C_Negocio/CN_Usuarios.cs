@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using ProyectoRestaurante.DAO;
+using System.Windows;
 
 namespace ProyectoRestaurante.C_Negocio
 {
@@ -15,12 +16,10 @@ namespace ProyectoRestaurante.C_Negocio
 
 
         //metodo que devuelve una tabla por medio del objeto usr.VerUsuarios
-        public DataTable ListarUsuarios()
+        public void ListarUsuarios()
         {
-            DataTable dt = new DataTable();
-            //dt = usr.VerUsuarios();
-            return dt;
-        } 
+            usr.VerUsuarios();
+        }
 
         public void AgregarUsuario(string usuario, string password, string tipoUsuario)
         {
@@ -32,9 +31,24 @@ namespace ProyectoRestaurante.C_Negocio
             usr.UpdateUsuario(Convert.ToInt32(id), usuario, password, tipoUsuario);
         }
 
+        public void EliminarUsuario(int id)
+        {
+            usr.DeleteUsuario(Convert.ToInt32(id));
+        }
 
+        public int LoginUsuario(string usuario, string password)
+        {
+            int x = 0;
+
+            if (usr.login(usuario, password) == true)
+            {
+                x = 1;
+            }
+
+            return x;
+        }
     }
 
-    
+
 
 }

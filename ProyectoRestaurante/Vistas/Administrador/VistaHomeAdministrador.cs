@@ -43,47 +43,48 @@ namespace ProyectoRestaurante
 
         private void btnMesas_Click(object sender, EventArgs e)
         {
-            VistaGestionMesas mesas = new VistaGestionMesas();
+            VistaGestionMesas mesas = new VistaGestionMesas(lblNameUser.Text);
             mesas.Show();
             this.Hide();
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            VistaGestionUsuarios usuarios = new VistaGestionUsuarios();
+            VistaGestionUsuarios usuarios = new VistaGestionUsuarios(lblNameUser.Text);
             usuarios.Show();
             this.Hide();
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            VistaGestiónProductos productos = new VistaGestiónProductos();
+            VistaGestionPlatos productos = new VistaGestionPlatos(lblNameUser.Text);
             productos.Show();
             this.Hide();
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
-            VistaGestionProveedor proveedores = new VistaGestionProveedor();
+            VistaGestionProveedor proveedores = new VistaGestionProveedor(lblNameUser.Text);
             proveedores.Show();
             this.Hide();
         }
 
         private void btnResumenDatos_Click(object sender, EventArgs e)
         {
-            VistaGestionReportes reportes = new VistaGestionReportes();
+            VistaGestionReportes reportes = new VistaGestionReportes(lblNameUser.Text);
             reportes.Show();
             this.Hide();
         }
 
         private void VistaHomeAdministrador_Load(object sender, EventArgs e)
         {
-            //AllPedidos();
+            AllPedidos();
         }
 
         private void AllPedidos()
         {
-            PedidoDao usr = new PedidoDao();
+            
+            PedidosDao usr = new PedidosDao();
             dgvPedidos.DataSource = usr.VerPedidos();
         }
     }

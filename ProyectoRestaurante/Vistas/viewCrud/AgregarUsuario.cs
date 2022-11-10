@@ -15,7 +15,6 @@ namespace ProyectoRestaurante.Vistas.viewCrud
     public partial class AgregarUsuario : Form
     {
         CN_Usuarios cn_usr = new CN_Usuarios();
-        //UsuariosDao usr = new UsuariosDao();
 
         public AgregarUsuario()
         {
@@ -46,12 +45,12 @@ namespace ProyectoRestaurante.Vistas.viewCrud
         public void AgregarNuevo()
         {
             
-            if (txtUsuario.Text != "")
+            if (txtUsuario.Text.Trim() != "")
             {
-                if (txtPassword.Text != "")
+                if (txtPassword.Text.Trim() != "")
                 {
                     cn_usr.AgregarUsuario(txtUsuario.Text, txtPassword.Text, cboTipoUser.Text);
-                                        
+                    MessageBox.Show("Usuario creado con exito!");
                 }
                 else
                 {
@@ -63,7 +62,7 @@ namespace ProyectoRestaurante.Vistas.viewCrud
                 MessageBox.Show("Ingrese un nombre de usuario");
             }
 
-            MessageBox.Show("Usuario creado con exito!");
+            
 
         }
 

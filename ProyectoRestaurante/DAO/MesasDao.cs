@@ -4,40 +4,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-//using System.Data.OracleClient;
 using ProyectoRestaurante.DTO;
 using Oracle.ManagedDataAccess.Client;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace ProyectoRestaurante.DAO
 {
-    class MesasDao:ConexionBD
+    class MesasDao : ConexionBD
     {
         OracleDataReader LeerFilas;
         OracleCommand cmd = new OracleCommand();
 
         //metodos crud
-        public List<MesasDto> VerMesas(string condicion)
+        public List<MesasDto> VerMesas()
         {
-            cmd.Connection  = oraConn;
-            cmd.CommandText = "SP_verMesas";
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@valor", condicion);
+            oraConn.Open();
 
-            oraConn.Open(); 
+            cmd.Connection = oraConn;
+            cmd.CommandText = "SP_VER_MESAS";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("v_mesas", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
 
             LeerFilas = cmd.ExecuteReader();
             List<MesasDto> ListaGenerica = new List<MesasDto>();
             while (LeerFilas.Read())
             {
+
                 ListaGenerica.Add(new MesasDto
                 {
                     Id = LeerFilas.GetInt32(0),
                     Capacidad = LeerFilas.GetInt32(1),
-                    Estado = LeerFilas.GetInt32(2)
+                    Estado = LeerFilas.GetString(2)
                 });
 
             }
-
+            
             LeerFilas.Close();
             oraConn.Close();
 
@@ -45,9 +47,40 @@ namespace ProyectoRestaurante.DAO
 
         }
 
-        public void insert() { }
-        public void update() { }
-        public void delete() { }
+        public void CreateMesas(int capacidad, string estado)
+        {
+            cmd.Connection = oraConn;
+            oraConn.Open();
+            cmd.CommandText = "SP_CREATE_MESA";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("V_capacidad", capacidad);
+            cmd.Parameters.Add("V_estado", estado);
+            cmd.ExecuteNonQuery();
+            oraConn.Close();
+        }
+
+        public void UpdateMesas(int id, string estado)
+        {
+            cmd.Connection = oraConn;
+            oraConn.Open();
+            cmd.CommandText = "SP_UPDATE_ESTADO_MESA";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("v_id", id);
+            cmd.Parameters.Add("V_estado", estado);
+            cmd.ExecuteNonQuery();
+            oraConn.Close();
+        }
+        public void DeleteMesas(int id_mesa)
+        {
+            cmd.Connection = oraConn;
+            oraConn.Open();
+            cmd.CommandText = "SP_DELETE_MESA";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("v_id", id_mesa);
+            cmd.ExecuteNonQuery();
+            oraConn.Close();
+        }
+
         
 
     }
