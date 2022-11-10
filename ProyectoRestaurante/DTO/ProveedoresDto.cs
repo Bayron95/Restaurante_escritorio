@@ -16,6 +16,16 @@ namespace ProyectoRestaurante.DTO
         int     _TELEFONO;
         string  _CORREO;
 
+        public ProveedoresDto()
+        {
+            _ID_PROVEEDOR = 0;
+            _NOMBRE = null;
+            _RUT = null;
+            _DIRECCION = null;
+            _TELEFONO = 0;
+            _CORREO = null;
+        }
+
         public int ID_PROVEEDOR { get => _ID_PROVEEDOR; set => _ID_PROVEEDOR = value; }
         public string NOMBRE { get => _NOMBRE; set => _NOMBRE = value; }
         public string RUT { get => _RUT; set => _RUT = value; }

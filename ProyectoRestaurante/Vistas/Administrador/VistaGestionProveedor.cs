@@ -18,10 +18,23 @@ namespace ProyectoRestaurante
 
         C_Negocio.CN_Proveedores pvdrs = new C_Negocio.CN_Proveedores();
         ProveedoresDto _proveedor = new ProveedoresDto();
+        public delegate void UpdateDelegate(object sender, UpdateEventArgs args);
+        public event UpdateDelegate UpdateEventHandler;
+
         public VistaGestionProveedor(string usuario)
         {
             InitializeComponent();
             lblNameUser.Text = usuario;
+        }
+        public class UpdateEventArgs : EventArgs
+        {
+            public string Data { get; set; }
+        }
+
+        protected void insertar()
+        {
+            UpdateEventArgs args = new UpdateEventArgs();
+            UpdateEventHandler.Invoke(this, args);
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -31,19 +44,19 @@ namespace ProyectoRestaurante
             this.Close();
         }
 
-        private void ActualizarGridAdd(object sender, AgregarProveedor.UpdateEventArgs args)
+        private void ActualizarGridAdd(object sender, UpdateEventArgs args)
         {
             ProveedoresDao pvdrs = new ProveedoresDao();
             dgvProveedores.DataSource = pvdrs.VerProveedores();
         }
 
-        private void ActualizarGridUpdate(object sender, EditarProveedor.UpdateEventArgs args)
+        private void ActualizarGridUpdate(object sender, UpdateEventArgs args)
         {
             ProveedoresDao pvdrs = new ProveedoresDao();
             dgvProveedores.DataSource = pvdrs.VerProveedores();
         }
 
-        private void ActualizarGridDelete(object sender, EliminarProveedor.UpdateEventArgs args)
+        private void ActualizarGridDelete(object sender, UpdateEventArgs args)
         {
             ProveedoresDao pvdrs = new ProveedoresDao();
             dgvProveedores.DataSource = pvdrs.VerProveedores();
@@ -61,7 +74,7 @@ namespace ProyectoRestaurante
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (dgvProveedores.SelectedRows.Count > 1)
+            if (dgvProveedores.SelectedRows.Count > 0)
             {
                 lblID.Text = dgvProveedores.CurrentRow.Cells[0].Value.ToString();
                 txtNombre.Text = dgvProveedores.CurrentRow.Cells[1].Value.ToString();
@@ -75,15 +88,23 @@ namespace ProyectoRestaurante
             {
                 MessageBox.Show("Debe selecionar un registro");
             }
-            
+
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            
             if (dgvProveedores.SelectedRows.Count > 0)
             {
+                _proveedor.NOMBRE = null;
+                _proveedor.RUT = null;
+                _proveedor.DIRECCION = null;
+                _proveedor.TELEFONO = 0;
+                _proveedor.CORREO = null;
                 _proveedor.ID_PROVEEDOR = Convert.ToInt32(dgvProveedores.CurrentRow.Cells[0].Value.ToString());
                 pvdrs.EliminarProveedores(_proveedor);
+                UpdateEventHandler += ActualizarGridDelete;
+                insertar();
             }
             else
             {
@@ -96,47 +117,60 @@ namespace ProyectoRestaurante
         {
             bool flag = false;
 
-            if (txtNombre.Text != "")
+            try
             {
-                if (txtRut.Text != "")
+                if (txtNombre.Text != "")
                 {
-                    if (txtDireccion.Text != "")
+                    if (txtRut.Text != "")
                     {
-                        if (txtTelefono.Text != "")
+                        if (txtDireccion.Text != "")
                         {
-                            if (txtCorreo.Text != "")
+                            if (txtTelefono.Text != "")
                             {
-
-                                _proveedor.NOMBRE = txtNombre.Text;
-                                _proveedor.RUT = txtRut.Text;
-                                _proveedor.DIRECCION = txtDireccion.Text;
-                                _proveedor.TELEFONO = Convert.ToInt32(txtTelefono.Text);
-                                _proveedor.CORREO = txtCorreo.Text;
-
-                                if (lblID.Text != "")
+                                if (txtCorreo.Text != "")
                                 {
+                                    _proveedor.NOMBRE = txtNombre.Text;
+                                    _proveedor.RUT = txtRut.Text;
+                                    _proveedor.DIRECCION = txtDireccion.Text;
+                                    _proveedor.TELEFONO = Convert.ToInt32(txtTelefono.Text);
+                                    _proveedor.CORREO = txtCorreo.Text;
 
-                                    flag = pvdrs.EditarProveedores(_proveedor);
+                                    if (lblID.Text != "")
+                                    {
+                                        _proveedor.ID_PROVEEDOR = Convert.ToInt32(lblID.Text);
+                                        flag = pvdrs.EditarProveedores(_proveedor);
+                                        UpdateEventHandler += ActualizarGridUpdate;
+                                        limpiar();
+                                        insertar();
+                                    }
+                                    else
+                                    {
+                                        flag = pvdrs.AgregarProveedores(_proveedor);
+                                        UpdateEventHandler += ActualizarGridAdd;
+                                        limpiar();
+                                        insertar();
+                                    }
+                                    if (flag)
+                                    {
+                                        MessageBox.Show("Registro guardado");
+                                    }
                                 }
-                                else
-                                {
-                                    flag = pvdrs.AgregarProveedores(_proveedor);
-                                }
-                                if (flag)
-                                {
-                                    MessageBox.Show("Registro guardado");
-                                    limpiar();
-                                }
+                                else { MessageBox.Show("Ingrese correo"); }
                             }
-                            else { MessageBox.Show("Ingrese correo");}
+                            else { MessageBox.Show("Ingrese telefono"); }
                         }
-                        else { MessageBox.Show("Ingrese telefono"); }
+                        else { MessageBox.Show("Ingrese dirección"); }
                     }
-                    else { MessageBox.Show("Ingrese dirección"); }
+                    else { MessageBox.Show("Ingrese rut"); }
                 }
-                else { MessageBox.Show("Ingrese rut"); }
+                else { MessageBox.Show("Ingrese nombre"); }
+                
             }
-            else { MessageBox.Show("Ingrese nombre"); }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(Convert.ToString(ex));
+            }
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)

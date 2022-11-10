@@ -28,11 +28,11 @@ namespace ProyectoRestaurante.DAO
             {
                 ListaGenerica.Add(new PlatosDto
                 {
-                    Id_plato = LeerFilas.GetInt32(0),
-                    Nombre_plato = LeerFilas.GetString(1),
-                    Precio_plato = LeerFilas.GetInt32(2),
-                    Descripcion_plato = LeerFilas.GetString(3),
-                    Estado_plato = LeerFilas.GetInt32(4)
+                    //Id_plato = LeerFilas.GetInt32(0),
+                    Nombre_plato = LeerFilas.GetString(0),
+                    Precio_plato = LeerFilas.GetInt32(1),
+                    Descripcion_plato = LeerFilas.GetString(2),
+                    Estado_plato = LeerFilas.GetInt32(3)
                 });
             }
             LeerFilas.Close();
