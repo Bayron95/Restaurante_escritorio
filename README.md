@@ -1,2 +1,0 @@
-# ProyectoDotNet
-Portafolio - Aplicacción Escritorio
