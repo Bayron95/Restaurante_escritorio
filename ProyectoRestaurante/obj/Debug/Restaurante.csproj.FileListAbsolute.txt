@@ -1,0 +1,193 @@
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe.config
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.pdb
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Buffers.dll
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Memory.dll
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Text.Json.dll
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.ValueTuple.dll
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Buffers.xml
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Memory.xml
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Text.Json.xml
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.ValueTuple.xml
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaLogin.resources
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Properties.Resources.resources
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.VistaBodega.resources
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaCocina.resources
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaHomeAdministrador.resources
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Restaurante.csproj.CopyComplete
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
+C:\Users\Byron Carrasco\Desktop\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe.config
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.pdb
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Buffers.dll
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Memory.dll
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Text.Json.dll
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.ValueTuple.dll
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Buffers.xml
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Memory.xml
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Text.Json.xml
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\bin\Debug\System.ValueTuple.xml
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.Administrador.VistaGestionMesas.resources
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaLogin.resources
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Properties.Resources.resources
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.VistaBodega.resources
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaCocina.resources
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaHomeAdministrador.resources
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\Restaurante.csproj.CopyComplete
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
+C:\Users\sebac\OneDrive\Escritorio\Portafolio\Desarrollo\ProyectoRestaurante\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.VistaFinanzas.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe.config
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.pdb
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Buffers.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Memory.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Text.Json.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.ValueTuple.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Buffers.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Memory.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Text.Json.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\bin\Debug\System.ValueTuple.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaLogin.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaCocina.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaHomeAdministrador.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\Restaurante.csproj.CopyComplete
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaFinanzas.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaBodega.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\GIT\ProyectoDotNet\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionMesas.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe.config
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.pdb
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Buffers.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Memory.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Text.Json.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.ValueTuple.dll
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Buffers.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Memory.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Text.Json.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.ValueTuple.xml
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Properties.Resources.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionMesas.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionPlatos.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionProveedor.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionReportes.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionUsuarios.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaFinanzas.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaLogin.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaBodega.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaCocina.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaHomeAdministrador.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrud.AgregarUsuario.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrud.EditarUsuario.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrud.EliminarUsuario.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\Restaurante.csproj.CopyComplete
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe.config
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.exe
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\ProyectoRestaurante.pdb
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Buffers.dll
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Memory.dll
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Text.Json.dll
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.ValueTuple.dll
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Buffers.xml
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Memory.xml
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Text.Json.xml
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\bin\Debug\System.ValueTuple.xml
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Properties.Resources.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionMesas.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionPlatos.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionProveedor.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionReportes.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestionUsuarios.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaFinanzas.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaLogin.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaBodega.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaCocina.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaHomeAdministrador.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrud.AgregarUsuario.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrud.EditarUsuario.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrud.EliminarUsuario.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\Restaurante.csproj.CopyComplete
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.exe
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.pdb
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrudBodega.AgregarProductos.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrudBodega.EditarProductos.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.viewCrudBodega.EliminarProductos.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaGestiónProductos3.resources
+C:\Users\Byron\Desktop\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.Bodega.VistaGestiónReceta.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.Bodega.VistaCalcularPedido.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.Vistas.Cocina.VistaReporteUtilidad.resources
+C:\Users\Byron\Desktop\Portafolio\Desarrollo\ProyectoRestaurante_desktop\ProyectoRestaurante\obj\Debug\ProyectoRestaurante.VistaFormatoDoc.resources
