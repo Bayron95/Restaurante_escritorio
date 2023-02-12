@@ -1,2 +1,4 @@
 # ProyectoDotNet
-Portafolio - Aplicacción Escritorio
+- Portafolio - 
+Restaurant Siglo XXI
+-Aplicacción de escritorio desarrollada en C#
