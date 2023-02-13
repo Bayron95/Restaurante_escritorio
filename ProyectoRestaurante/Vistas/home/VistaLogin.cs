@@ -43,7 +43,7 @@ namespace ProyectoRestaurante
             }
             else
             {
-                MessageBox.Show("Ingrese un usuario");
+                MessageBox.Show("Ingrese usuario");
             }
         }
 
