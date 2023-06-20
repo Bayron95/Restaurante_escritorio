@@ -117,25 +117,26 @@ namespace ProyectoRestaurante.DAO
                 DataTable dt = new DataTable();
                 oda.Fill(dt);
 
+
                 if (dt.Rows.Count == 1)
                 {
 
-                    if (dt.Rows[0][3].ToString() == "Administrador")
+                    if (dt.Rows[0][1].ToString() == "Administrador")
                     {
                         MessageBox.Show("Bienvenido! \n" + usuario);
                         new VistaHomeAdministrador(dt.Rows[0][1].ToString()).Show();
                     }
-                    else if (dt.Rows[0][3].ToString() == "Cocina")
+                    else if (dt.Rows[0][1].ToString() == "Cocina")
                     {
                         MessageBox.Show("Bienvenido! \n" + usuario);
                         new VistaCocina(dt.Rows[0][1].ToString()).Show();
                     }
-                    else if (dt.Rows[0][3].ToString() == "Finanzas")
+                    else if (dt.Rows[0][1].ToString() == "Finanzas")
                     {
                         MessageBox.Show("Bienvenido! \n" + usuario);
                         new VistaFinanzas(dt.Rows[0][1].ToString()).Show();
                     }
-                    else if (dt.Rows[0][3].ToString() == "Bodega")
+                    else if (dt.Rows[0][1].ToString() == "Bodega")
                     {
                         MessageBox.Show("Bienvenido! \n" + usuario);
                         new VistaBodega(dt.Rows[0][1].ToString()).Show();
